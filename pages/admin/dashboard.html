@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+
+Admin Dashboard | AdMarket
+
+</title>
+
+<meta
+name="description"
+content="AdMarket administration dashboard.">
+
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/reset.css">
+<link rel="stylesheet" href="../../assets/css/utilities.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/app.css">
+
+</head>
+
+<body>
+
+<div id="loader" class="loader">
+
+<div class="spinner"></div>
+
+</div>
+
+<header class="dashboard-header">
+
+<div class="container">
+
+<a
+href="../../index.html"
+class="navbar-brand">
+
+<img
+src="../../assets/images/logo.png"
+alt="AdMarket">
+
+<span>
+
+AdMarket Admin
+
+</span>
+
+</a>
+
+<div class="dashboard-actions">
+
+<button class="btn btn-primary">
+
+Administrator
+
+</button>
+
+</div>
+
+</div>
+
+</header>
+
+<main class="dashboard">
+
+<div class="container">
+
+<section class="section-header">
+
+<h1>
+
+Platform Dashboard
+
+</h1>
+
+<p>
+
+Monitor users, sellers, products, orders and platform activity.
+
+</p>
+
+</section>
+
+<section class="dashboard-stats">
+
+<article class="stat-card">
+
+<h2>
+
+0
+
+</h2>
+
+<p>
+
+Users
+
+</p>
+
+</article>
+
+<article class="stat-card">
+
+<h2>
+
+0
+
+</h2>
+
+<p>
+
+Pending Seller Applications
+
+</p>
+
+</article>
+
+<article class="stat-card">
+
+<h2>
+
+0
+
+</h2>
+
+<p>
+
+Products
+
+</p>
+
+</article>
+
+<article class="stat-card">
+
+<h2>
+
+0
+
+</h2>
+
+<p>
+
+Orders
+
+</p>
+
+</article>
+
+</section>
+
+<section class="quick-actions">
+
+<button class="action-card">
+
+Seller Applications
+
+</button>
+
+<button class="action-card">
+
+Users
+
+</button>
+
+<button class="action-card">
+
+Products
+
+</button>
+
+<button class="action-card">
+
+Reports
+
+</button>
+
+<button class="action-card">
+
+Analytics
+
+</button>
+
+<button class="action-card">
+
+Settings
+
+</button>
+
+</section>
+
+            <!-- Recent Seller Applications -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Recent Seller Applications
+
+                    </h2>
+
+                    <a
+                        href="seller-applications.html"
+                        class="btn btn-outline">
+
+                        View All
+
+                    </a>
+
+                </div>
+
+                <div class="dashboard-table">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Application ID</th>
+
+                                <th>Applicant</th>
+
+                                <th>Store</th>
+
+                                <th>Status</th>
+
+                                <th>Submitted</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="seller-applications-preview">
+
+                            <tr>
+
+                                <td colspan="5">
+
+                                    No pending applications.
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+            <!-- Recent Reports -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Recent Reports
+
+                    </h2>
+
+                </div>
+
+                <div class="dashboard-table">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Report ID</th>
+
+                                <th>Type</th>
+
+                                <th>Status</th>
+
+                                <th>Date</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="reports-preview">
+
+                            <tr>
+
+                                <td colspan="4">
+
+                                    No reports available.
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+            <!-- Platform Activity -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Platform Activity
+
+                    </h2>
+
+                </div>
+
+                <div class="activity-feed">
+
+                    <div class="activity-item">
+
+                        Admin activity will appear here.
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-bottom">
+
+                © 2026 AdMarket. All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="../../assets/js/core/config.js"></script>
+<script src="../../assets/js/core/ui.js"></script>
+<script src="../../assets/js/core/modal.js"></script>
+<script src="../../assets/js/core/loader.js"></script>
+<script src="../../assets/js/core/toast.js"></script>
+<script src="../../assets/js/core/validator.js"></script>
+<script src="../../assets/js/core/theme.js"></script>
+<script src="../../assets/js/core/app.js"></script>
+</body>
+
+</html>

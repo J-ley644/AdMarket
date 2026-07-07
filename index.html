@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AdMarket | Buy & Sell Products Online</title>
+
+    <meta name="description"
+        content="AdMarket is a modern online marketplace where buyers discover products and businesses grow their sales.">
+
+    <meta name="keywords"
+        content="marketplace,ecommerce,buy,sell,online shopping,AdMarket">
+
+    <meta name="author" content="AdMarket">
+
+    <meta name="theme-color" content="#2563eb">
+
+    <!-- Open Graph -->
+
+    <meta property="og:title" content="AdMarket">
+    <meta property="og:description"
+        content="Buy and sell products on AdMarket.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/cover.jpg">
+
+    <!-- Favicon -->
+
+    <link rel="icon" href="assets/images/favicon.ico">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/utilities.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+
+    <!-- =====================================
+         LOADING SCREEN
+    ====================================== -->
+
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- =====================================
+         HEADER
+    ====================================== -->
+
+    <header class="navbar">
+
+        <div class="navbar-brand">
+
+            <img
+                src="assets/images/logo.png"
+                alt="AdMarket Logo"
+                width="42"
+                height="42">
+
+            <span>AdMarket</span>
+
+        </div>
+
+        <nav class="navbar-nav">
+
+            <a href="#" class="nav-link active">
+                Home
+            </a>
+
+            <a href="#categories" class="nav-link">
+                Categories
+            </a>
+
+            <a href="#products" class="nav-link">
+                Products
+            </a>
+
+            <a href="#business" class="nav-link">
+                Sell
+            </a>
+
+            <a href="#about" class="nav-link">
+                About
+            </a>
+
+        </nav>
+
+        <div class="flex gap-2">
+
+            <a
+                href="login.html"
+                class="btn btn-outline">
+                Login
+            </a>
+
+            <a
+                href="register.html"
+                class="btn btn-primary">
+                Register
+            </a>
+
+        </div>
+
+    </header>
+
+    <!-- =====================================
+         HERO
+    ====================================== -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="hero-content">
+
+                <span class="badge badge-primary">
+                    Trusted Marketplace
+                </span>
+
+                <h1>
+                    Buy Smarter.
+                    Sell Faster.
+                    Grow Bigger.
+                </h1>
+
+                <p>
+                    Discover thousands of quality products from trusted businesses
+                    across Kenya. Whether you're shopping or selling,
+                    AdMarket makes commerce simple, secure and fast.
+                </p>
+
+                <!-- Search -->
+
+                <form
+                    class="search hero-search"
+                    autocomplete="off">
+
+                    <input
+                        type="search"
+                        placeholder="Search products, brands or categories...">
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary">
+
+                        Search
+
+                    </button>
+
+                </form>
+
+                <!-- Hero Buttons -->
+
+                <div class="flex gap-3 mt-6">
+
+                    <a
+                        href="#products"
+                        class="btn btn-primary">
+
+                        Explore Products
+
+                    </a>
+
+                    <a
+                        href="#business"
+                        class="btn btn-outline">
+
+                        Start Selling
+
+                    </a>
+
+                </div>
+
+                <!-- Quick Stats -->
+
+                <div class="hero-stats mt-8">
+
+                    <div class="stat">
+
+                        <h2>10K+</h2>
+
+                        <p>Products</p>
+
+                    </div>
+
+                    <div class="stat">
+
+                        <h2>2K+</h2>
+
+                        <p>Businesses</p>
+
+                    </div>
+
+                    <div class="stat">
+
+                        <h2>50K+</h2>
+
+                        <p>Customers</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Hero Image -->
+
+            <div class="hero-image">
+
+                <img
+                    src="assets/images/hero-shopping.png"
+                    alt="People shopping online">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <main>
+
+                <!-- =====================================
+             FEATURED CATEGORIES
+        ====================================== -->
+
+        <section id="categories" class="section">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="badge badge-primary">
+                        Browse
+                    </span>
+
+                    <h2>Shop by Category</h2>
+
+                    <p>
+                        Find exactly what you're looking for from our
+                        growing marketplace.
+                    </p>
+
+                </div>
+
+                <div class="categories-grid">
+
+                    <a href="#" class="category-card">
+                        <div class="category-icon">📱</div>
+                        <h3>Electronics</h3>
+                        <p>Phones, laptops, accessories and gadgets.</p>
+                    </a>
+
+                    <a href="#" class="category-card">
+                        <div class="category-icon">👕</div>
+                        <h3>Fashion</h3>
+                        <p>Clothing, shoes and accessories.</p>
+                    </a>
+
+                    <a href="#" class="category-card">
+                        <div class="category-icon">🏠</div>
+                        <h3>Home & Living</h3>
+                        <p>Furniture, décor and appliances.</p>
+                    </a>
+
+                    <a href="#" class="category-card">
+                        <div class="category-icon">💄</div>
+                        <h3>Beauty</h3>
+                        <p>Cosmetics and personal care.</p>
+                    </a>
+
+                    <a href="#" class="category-card">
+                        <div class="category-icon">🛒</div>
+                        <h3>Groceries</h3>
+                        <p>Everyday essentials delivered fast.</p>
+                    </a>
+
+                    <a href="#" class="category-card">
+                        <div class="category-icon">🚗</div>
+                        <h3>Automotive</h3>
+                        <p>Vehicle accessories and spare parts.</p>
+                    </a>
+
+                    <a href="#" class="category-card">
+                        <div class="category-icon">💻</div>
+                        <h3>Computers</h3>
+                        <p>Desktops, monitors and components.</p>
+                    </a>
+
+                    <a href="#" class="category-card">
+                        <div class="category-icon">🎮</div>
+                        <h3>Gaming</h3>
+                        <p>Consoles, games and accessories.</p>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================
+             FEATURED PRODUCTS
+        ====================================== -->
+
+        <section id="products" class="section">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="badge badge-success">
+                        Featured
+                    </span>
+
+                    <h2>Featured Products</h2>
+
+                    <p>
+                        Hand-picked products from trusted AdMarket
+                        businesses.
+                    </p>
+
+                </div>
+
+                <!--
+                    Products are rendered dynamically by app.js
+                -->
+
+                <div
+                    id="featured-products-grid"
+                    class="products-grid">
+
+                </div>
+
+                <div class="text-center mt-8">
+
+                    <button
+                        id="load-more-products"
+                        class="btn btn-outline">
+
+                        Load More Products
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================
+             TRENDING PRODUCTS
+        ====================================== -->
+
+        <section id="trending" class="section">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="badge badge-warning">
+
+                        Trending
+
+                    </span>
+
+                    <h2>Popular Right Now</h2>
+
+                    <p>
+
+                        The products shoppers are viewing the most.
+
+                    </p>
+
+                </div>
+
+                <!-- Dynamic Content -->
+
+                <div
+                    id="trending-products-grid"
+                    class="products-grid">
+
+                </div>
+
+            </div>
+
+        </section>
+
+                <!-- =====================================
+             WHY CHOOSE ADMARKET
+        ====================================== -->
+
+        <section id="about" class="section">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="badge badge-primary">
+                        Why AdMarket
+                    </span>
+
+                    <h2>Everything You Need in One Marketplace</h2>
+
+                    <p>
+                        Built for buyers, businesses and administrators with
+                        security, performance and simplicity at its core.
+                    </p>
+
+                </div>
+
+                <div class="features-grid">
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">🛡️</div>
+
+                        <h3>Secure Shopping</h3>
+
+                        <p>
+                            Secure authentication, trusted businesses and
+                            protected checkout experience.
+                        </p>
+
+                    </article>
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">⚡</div>
+
+                        <h3>Fast Marketplace</h3>
+
+                        <p>
+                            Optimized for speed on desktop and mobile devices.
+                        </p>
+
+                    </article>
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">💳</div>
+
+                        <h3>Multiple Payments</h3>
+
+                        <p>
+                            Ready for M-Pesa, Visa, Mastercard, PayPal and
+                            bank transfers.
+                        </p>
+
+                    </article>
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">🏪</div>
+
+                        <h3>Business Tools</h3>
+
+                        <p>
+                            Product management, analytics, orders and customer
+                            engagement in one dashboard.
+                        </p>
+
+                    </article>
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">📈</div>
+
+                        <h3>Business Growth</h3>
+
+                        <p>
+                            Reach more customers and grow your online sales
+                            with powerful marketplace tools.
+                        </p>
+
+                    </article>
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">⭐</div>
+
+                        <h3>Verified Reviews</h3>
+
+                        <p>
+                            Transparent ratings help customers make confident
+                            purchasing decisions.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================
+             MARKETPLACE STATS
+        ====================================== -->
+
+        <section class="section stats-section">
+
+            <div class="container">
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+
+                        <div class="stat-value"
+                             data-counter="10000">
+                            0
+                        </div>
+
+                        <div class="stat-title">
+                            Products Listed
+                        </div>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <div class="stat-value"
+                             data-counter="2000">
+                            0
+                        </div>
+
+                        <div class="stat-title">
+                            Registered Businesses
+                        </div>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <div class="stat-value"
+                             data-counter="50000">
+                            0
+                        </div>
+
+                        <div class="stat-title">
+                            Happy Customers
+                        </div>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <div class="stat-value"
+                             data-counter="47">
+                            0
+                        </div>
+
+                        <div class="stat-title">
+                            Product Categories
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================
+             BUSINESS CTA
+        ====================================== -->
+
+        <section id="business" class="section business-cta">
+
+            <div class="container">
+
+                <div class="business-content">
+
+                    <div>
+
+                        <span class="badge badge-success">
+                            For Businesses
+                        </span>
+
+                        <h2>
+                            Grow Your Business with AdMarket
+                        </h2>
+
+                        <p>
+
+                            Open your online store, manage products,
+                            receive orders, communicate with customers
+                            and track your business performance from
+                            one powerful dashboard.
+
+                        </p>
+
+                        <div class="flex gap-3 mt-6">
+
+                            <a
+                                href="register.html"
+                                class="btn btn-primary">
+
+                                Open a Store
+
+                            </a>
+
+                            <a
+                                href="#"
+                                class="btn btn-outline">
+
+                                Learn More
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="business-image">
+
+                        <img
+                            src="assets/images/business-dashboard.png"
+                            alt="Business Dashboard Preview">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================
+             TESTIMONIALS
+        ====================================== -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="badge badge-warning">
+
+                        Testimonials
+
+                    </span>
+
+                    <h2>
+
+                        What Our Users Say
+
+                    </h2>
+
+                    <p>
+
+                        Experiences shared by buyers and businesses
+                        using AdMarket.
+
+                    </p>
+
+                </div>
+
+                <!-- Dynamic -->
+
+                <div
+                    id="testimonial-slider">
+
+                </div>
+
+            </div>
+
+        </section>
+
+                <!-- =====================================
+             NEWSLETTER
+        ====================================== -->
+
+        <section id="newsletter" class="section">
+
+            <div class="container">
+
+                <div class="newsletter">
+
+                    <div class="newsletter-content">
+
+                        <span class="badge badge-primary">
+                            Stay Updated
+                        </span>
+
+                        <h2>
+                            Never Miss Great Deals
+                        </h2>
+
+                        <p>
+                            Subscribe to receive new arrivals, exclusive
+                            offers and marketplace updates directly in
+                            your inbox.
+                        </p>
+
+                    </div>
+
+                    <form
+                        id="newsletter-form"
+                        class="newsletter-form"
+                        autocomplete="off">
+
+                        <input
+                            type="email"
+                            id="newsletter-email"
+                            class="form-control"
+                            placeholder="Enter your email address"
+                            required>
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary">
+
+                            Subscribe
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================
+             FOOTER
+        ====================================== -->
+
+        <footer class="footer">
+
+            <div class="container">
+
+                <div class="footer-grid">
+
+                    <!-- Brand -->
+
+                    <div class="footer-column">
+
+                        <h3>AdMarket</h3>
+
+                        <p>
+
+                            A modern online marketplace connecting buyers
+                            with trusted businesses through a secure,
+                            fast and user-friendly platform.
+
+                        </p>
+
+                    </div>
+
+                    <!-- Marketplace -->
+
+                    <div class="footer-column">
+
+                        <h4>Marketplace</h4>
+
+                        <ul>
+
+                            <li><a href="#categories">Categories</a></li>
+                            <li><a href="#products">Products</a></li>
+                            <li><a href="#trending">Trending</a></li>
+                            <li><a href="#business">Sell on AdMarket</a></li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- Company -->
+
+                    <div class="footer-column">
+
+                        <h4>Company</h4>
+
+                        <ul>
+
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- Legal -->
+
+                    <div class="footer-column">
+
+                        <h4>Legal</h4>
+
+                        <ul>
+
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Refund Policy</a></li>
+                            <li><a href="#">Help Center</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="footer-bottom">
+
+                    <p>
+
+                        &copy; 2026 AdMarket.
+                        All Rights Reserved.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+        <!-- =====================================
+             BACK TO TOP
+        ====================================== -->
+
+        <button
+            id="back-to-top"
+            class="btn btn-primary"
+            aria-label="Back to Top">
+
+            ↑
+
+        </button>
+
+    </main>
+
+    <!-- =====================================
+         JAVASCRIPT
+    ====================================== -->
+
+    <script src="../../assets/js/core/config.js"></script>
+<script src="../../assets/js/core/ui.js"></script>
+<script src="../../assets/js/core/modal.js"></script>
+<script src="../../assets/js/core/loader.js"></script>
+<script src="../../assets/js/core/toast.js"></script>
+<script src="../../assets/js/core/validator.js"></script>
+<script src="../../assets/js/core/theme.js"></script>
+<script src="../../assets/js/core/app.js"></script>
+
+</body>
+</html>

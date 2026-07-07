@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        Seller Application Details | AdMarket Admin
+
+    </title>
+
+    <meta
+        name="description"
+        content="Review a seller application.">
+
+    <link rel="stylesheet" href="../../assets/css/variables.css">
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/utilities.css">
+    <link rel="stylesheet" href="../../assets/css/components.css">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+
+</head>
+
+<body>
+
+    <div id="loader" class="loader">
+
+        <div class="spinner"></div>
+
+    </div>
+
+    <header class="dashboard-header">
+
+        <div class="container">
+
+            <a
+                href="dashboard.html"
+                class="navbar-brand">
+
+                <img
+                    src="../../assets/images/logo.png"
+                    alt="AdMarket Logo">
+
+                <span>
+
+                    AdMarket Admin
+
+                </span>
+
+            </a>
+
+        </div>
+
+    </header>
+
+    <main class="dashboard">
+
+        <div class="container">
+
+            <section class="section-header">
+
+                <h1>
+
+                    Seller Application Review
+
+                </h1>
+
+                <p>
+
+                    Review the applicant's information and make a verification decision.
+
+                </p>
+
+            </section>
+
+            <!-- Applicant Information -->
+
+            <section class="dashboard-table">
+
+                <table>
+
+                    <tbody>
+
+                        <tr>
+
+                            <th>Application ID</th>
+
+                            <td id="application-id">
+
+                                AM-SLR-000001
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>Applicant Name</th>
+
+                            <td id="applicant-name">
+
+                                —
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>Seller Type</th>
+
+                            <td id="seller-type">
+
+                                —
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>Store Name</th>
+
+                            <td id="store-name">
+
+                                —
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>Business Category</th>
+
+                            <td id="business-category">
+
+                                —
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>Phone Number</th>
+
+                            <td id="business-phone">
+
+                                —
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>Location</th>
+
+                            <td id="business-location">
+
+                                —
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>Status</th>
+
+                            <td id="application-status">
+
+                                Pending Review
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+            <!-- Uploaded Documents -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Uploaded Documents
+
+                    </h2>
+
+                </div>
+
+                <div class="products-grid">
+
+                    <div class="document-card">
+
+                        <h3>
+
+                            Government ID
+
+                        </h3>
+
+                        <button
+                            class="btn btn-outline"
+                            type="button">
+
+                            View Document
+
+                        </button>
+
+                    </div>
+
+                    <div class="document-card">
+
+                        <h3>
+
+                            Selfie
+
+                        </h3>
+
+                        <button
+                            class="btn btn-outline"
+                            type="button">
+
+                            View Image
+
+                        </button>
+
+                    </div>
+
+                    <div class="document-card">
+
+                        <h3>
+
+                            Business Certificate
+
+                        </h3>
+
+                        <button
+                            class="btn btn-outline"
+                            type="button">
+
+                            View Document
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+                        <!-- Internal Notes -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Internal Admin Notes
+
+                    </h2>
+
+                </div>
+
+                <textarea
+                    id="admin-notes"
+                    class="form-control"
+                    rows="6"
+                    placeholder="Add notes about this verification..."></textarea>
+
+            </section>
+
+            <!-- Decision -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Verification Decision
+
+                    </h2>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="decision-reason">
+
+                        Decision Reason
+
+                    </label>
+
+                    <textarea
+                        id="decision-reason"
+                        class="form-control"
+                        rows="4"
+                        placeholder="Provide a reason for your decision. This may be shared with the applicant if applicable."></textarea>
+
+                </div>
+
+            </section>
+
+            <!-- Actions -->
+
+            <section class="section">
+
+                <div class="dashboard-actions">
+
+                    <button
+                        type="button"
+                        class="btn btn-outline">
+
+                        Request More Information
+
+                    </button>
+
+                    <button
+                        type="button"
+                        class="btn btn-outline">
+
+                        Reject Application
+
+                    </button>
+
+                    <button
+                        type="button"
+                        class="btn btn-primary">
+
+                        Approve Seller
+
+                    </button>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-bottom">
+
+                © 2026 AdMarket. All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="../../assets/js/core/config.js"></script>
+<script src="../../assets/js/core/ui.js"></script>
+<script src="../../assets/js/core/modal.js"></script>
+<script src="../../assets/js/core/loader.js"></script>
+<script src="../../assets/js/core/toast.js"></script>
+<script src="../../assets/js/core/validator.js"></script>
+<script src="../../assets/js/core/theme.js"></script>
+<script src="../../assets/js/core/app.js"></script>
+</body>
+
+</html>

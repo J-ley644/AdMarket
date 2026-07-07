@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        Customers | AdMarket
+
+    </title>
+
+    <meta
+        name="description"
+        content="Manage your customers.">
+
+    <link rel="stylesheet" href="../../assets/css/variables.css">
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/utilities.css">
+    <link rel="stylesheet" href="../../assets/css/components.css">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+
+</head>
+
+<body>
+
+    <div id="loader" class="loader">
+
+        <div class="spinner"></div>
+
+    </div>
+
+    <header class="dashboard-header">
+
+        <div class="container">
+
+            <a
+                href="dashboard.html"
+                class="navbar-brand">
+
+                <img
+                    src="../../assets/images/logo.png"
+                    alt="AdMarket Logo">
+
+                <span>
+
+                    AdMarket Seller
+
+                </span>
+
+            </a>
+
+        </div>
+
+    </header>
+
+    <main class="dashboard">
+
+        <div class="container">
+
+            <section class="section-header">
+
+                <h1>
+
+                    Customers
+
+                </h1>
+
+                <p>
+
+                    View and manage customers who have purchased from your store.
+
+                </p>
+
+            </section>
+
+            <!-- Search -->
+
+            <section class="product-filters">
+
+                <input
+                    id="customer-search"
+                    class="form-control"
+                    type="search"
+                    placeholder="Search by customer name, email or phone">
+
+            </section>
+
+            <!-- Customer Statistics -->
+
+            <section class="dashboard-stats">
+
+                <article class="stat-card">
+
+                    <h2>
+
+                        0
+
+                    </h2>
+
+                    <p>
+
+                        Total Customers
+
+                    </p>
+
+                </article>
+
+                <article class="stat-card">
+
+                    <h2>
+
+                        0
+
+                    </h2>
+
+                    <p>
+
+                        New This Month
+
+                    </p>
+
+                </article>
+
+                <article class="stat-card">
+
+                    <h2>
+
+                        0
+
+                    </h2>
+
+                    <p>
+
+                        Returning Customers
+
+                    </p>
+
+                </article>
+
+                <article class="stat-card">
+
+                    <h2>
+
+                        KES 0
+
+                    </h2>
+
+                    <p>
+
+                        Customer Sales
+
+                    </p>
+
+                </article>
+
+            </section>
+
+            <!-- Customers Table -->
+
+            <section class="dashboard-table">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Customer</th>
+                            <th>Email</th>
+                            <th>Orders</th>
+                            <th>Total Spent</th>
+                            <th>Last Order</th>
+                            <th>Action</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="customers-table">
+
+                        <tr>
+
+                            <td colspan="6">
+
+                                No customers found.
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+                        <!-- Recent Customer Activity -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Recent Customer Activity
+
+                    </h2>
+
+                </div>
+
+                <div class="activity-feed">
+
+                    <div class="activity-item">
+
+                        Recent customer activity will appear here.
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Actions -->
+
+            <section class="section">
+
+                <div class="dashboard-actions">
+
+                    <button
+                        type="button"
+                        class="btn btn-outline">
+
+                        Export Customers
+
+                    </button>
+
+                    <button
+                        type="button"
+                        class="btn btn-outline">
+
+                        Refresh
+
+                    </button>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-bottom">
+
+                © 2026 AdMarket. All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="../../assets/js/core/config.js"></script>
+<script src="../../assets/js/core/ui.js"></script>
+<script src="../../assets/js/core/modal.js"></script>
+<script src="../../assets/js/core/loader.js"></script>
+<script src="../../assets/js/core/toast.js"></script>
+<script src="../../assets/js/core/validator.js"></script>
+<script src="../../assets/js/core/theme.js"></script>
+<script src="../../assets/js/core/app.js"></script>
+
+</body>
+
+</html>

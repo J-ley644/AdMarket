@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        My Products | AdMarket
+
+    </title>
+
+    <meta
+        name="description"
+        content="Manage your products on AdMarket.">
+
+    <link rel="stylesheet" href="../../assets/css/variables.css">
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/utilities.css">
+    <link rel="stylesheet" href="../../assets/css/components.css">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+
+</head>
+
+<body>
+
+    <div id="loader" class="loader">
+
+        <div class="spinner"></div>
+
+    </div>
+
+    <header class="dashboard-header">
+
+        <div class="container">
+
+            <a
+                href="dashboard.html"
+                class="navbar-brand">
+
+                <img
+                    src="../../assets/images/logo.png"
+                    alt="AdMarket Logo">
+
+                <span>
+
+                    AdMarket Seller
+
+                </span>
+
+            </a>
+
+            <div class="dashboard-actions">
+
+                <a
+                    href="add-product.html"
+                    class="btn btn-primary">
+
+                    + Add Product
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="dashboard">
+
+        <div class="container">
+
+            <section class="section-header">
+
+                <h1>
+
+                    My Products
+
+                </h1>
+
+                <p>
+
+                    View, organize and manage all products in your store.
+
+                </p>
+
+            </section>
+
+            <!-- Search & Filters -->
+
+            <section class="product-filters">
+
+                <input
+                    id="seller-product-search"
+                    class="form-control"
+                    type="search"
+                    placeholder="Search products...">
+
+                <select
+                    id="seller-product-category"
+                    class="form-control">
+
+                    <option value="">
+
+                        All Categories
+
+                    </option>
+
+                    <option>Electronics</option>
+                    <option>Fashion</option>
+                    <option>Home & Living</option>
+                    <option>Beauty</option>
+                    <option>Sports</option>
+                    <option>Books</option>
+                    <option>Health</option>
+                    <option>Automotive</option>
+
+                </select>
+
+                <select
+                    id="seller-product-status"
+                    class="form-control">
+
+                    <option value="">
+
+                        All Statuses
+
+                    </option>
+
+                    <option>
+
+                        Active
+
+                    </option>
+
+                    <option>
+
+                        Draft
+
+                    </option>
+
+                    <option>
+
+                        Out of Stock
+
+                    </option>
+
+                    <option>
+
+                        Hidden
+
+                    </option>
+
+                </select>
+
+            </section>
+
+            <!-- Products Table -->
+
+            <section class="dashboard-table">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Product</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Stock</th>
+                            <th>Status</th>
+                            <th>Action</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="seller-products-table">
+
+                        <tr>
+
+                            <td colspan="6">
+
+                                No products found.
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+                        <!-- Inventory Summary -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Inventory Summary
+
+                    </h2>
+
+                </div>
+
+                <div class="dashboard-stats">
+
+                    <article class="stat-card">
+
+                        <h3>
+
+                            0
+
+                        </h3>
+
+                        <p>
+
+                            Active Products
+
+                        </p>
+
+                    </article>
+
+                    <article class="stat-card">
+
+                        <h3>
+
+                            0
+
+                        </h3>
+
+                        <p>
+
+                            Draft Products
+
+                        </p>
+
+                    </article>
+
+                    <article class="stat-card">
+
+                        <h3>
+
+                            0
+
+                        </h3>
+
+                        <p>
+
+                            Out of Stock
+
+                        </p>
+
+                    </article>
+
+                    <article class="stat-card">
+
+                        <h3>
+
+                            0
+
+                        </h3>
+
+                        <p>
+
+                            Hidden Products
+
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+            <!-- Bulk Actions -->
+
+            <section class="section">
+
+                <div class="dashboard-actions">
+
+                    <button
+                        type="button"
+                        class="btn btn-outline">
+
+                        Export Products
+
+                    </button>
+
+                    <button
+                        type="button"
+                        class="btn btn-outline">
+
+                        Refresh
+
+                    </button>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-bottom">
+
+                © 2026 AdMarket. All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="../../assets/js/core/config.js"></script>
+<script src="../../assets/js/core/ui.js"></script>
+<script src="../../assets/js/core/modal.js"></script>
+<script src="../../assets/js/core/loader.js"></script>
+<script src="../../assets/js/core/toast.js"></script>
+<script src="../../assets/js/core/validator.js"></script>
+<script src="../../assets/js/core/theme.js"></script>
+<script src="../../assets/js/core/app.js"></script>
+
+</body>
+
+</html>

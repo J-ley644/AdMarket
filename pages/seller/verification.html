@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        Seller Verification | AdMarket
+
+    </title>
+
+    <meta
+        name="description"
+        content="Verify your identity to become an AdMarket seller.">
+
+    <link rel="stylesheet" href="../../assets/css/variables.css">
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/utilities.css">
+    <link rel="stylesheet" href="../../assets/css/components.css">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+
+</head>
+
+<body>
+
+<div id="loader" class="loader">
+
+    <div class="spinner"></div>
+
+</div>
+
+<header class="dashboard-header">
+
+    <div class="container">
+
+        <a
+            href="../../index.html"
+            class="navbar-brand">
+
+            <img
+                src="../../assets/images/logo.png"
+                alt="AdMarket Logo">
+
+            <span>
+
+                AdMarket
+
+            </span>
+
+        </a>
+
+    </div>
+
+</header>
+
+<main class="dashboard">
+
+<div class="container">
+
+<section class="section-header">
+
+<h1>
+
+Identity Verification
+
+</h1>
+
+<p>
+
+To protect buyers and sellers, every seller must complete identity verification before selling on AdMarket.
+
+</p>
+
+</section>
+
+<form id="verification-form">
+
+<div class="form-group">
+
+<label for="seller-type">
+
+Seller Type
+
+</label>
+
+<select
+id="seller-type"
+class="form-control">
+
+<option>
+
+Individual Seller
+
+</option>
+
+<option>
+
+Registered Business
+
+</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label for="id-type">
+
+Identification Document
+
+</label>
+
+<select
+id="id-type"
+class="form-control">
+
+<option>
+
+National ID
+
+</option>
+
+<option>
+
+Passport
+
+</option>
+
+<option>
+
+Driving Licence
+
+</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label for="document-number">
+
+Document Number
+
+</label>
+
+<input
+id="document-number"
+class="form-control"
+type="text"
+placeholder="Enter document number">
+
+</div>
+
+<div class="form-group">
+
+<label for="id-upload">
+
+Upload Identification Document
+
+</label>
+
+<input
+id="id-upload"
+class="form-control"
+type="file"
+accept="image/*,.pdf">
+
+<small>
+
+Upload a clear photo or PDF of your identification document.
+
+</small>
+
+</div>
+
+<div class="form-group">
+
+<label for="selfie-upload">
+
+Upload Selfie
+
+</label>
+
+<input
+id="selfie-upload"
+class="form-control"
+type="file"
+accept="image/*">
+
+<small>
+
+Upload a clear selfie for identity verification.
+
+</small>
+
+</div>
+
+                <div class="form-group">
+
+                    <label for="business-certificate">
+
+                        Business Registration Certificate (Optional)
+
+                    </label>
+
+                    <input
+                        id="business-certificate"
+                        class="form-control"
+                        type="file"
+                        accept=".pdf,image/*">
+
+                    <small>
+
+                        Required only for registered businesses.
+
+                    </small>
+
+                </div>
+
+                <section class="section">
+
+                    <div class="section-header">
+
+                        <h2>
+
+                            Verification Checklist
+
+                        </h2>
+
+                    </div>
+
+                    <ul class="verification-checklist">
+
+                        <li>✓ Government-issued identification</li>
+
+                        <li>✓ Clear selfie photo</li>
+
+                        <li>✓ Accurate personal information</li>
+
+                        <li>✓ Business certificate (if applicable)</li>
+
+                    </ul>
+
+                </section>
+
+                <section class="section">
+
+                    <div class="info-card">
+
+                        <h3>
+
+                            Your Privacy Matters
+
+                        </h3>
+
+                        <p>
+
+                            Your verification documents are used only for identity verification and fraud prevention. They are securely stored and reviewed only by authorized AdMarket administrators.
+
+                        </p>
+
+                    </div>
+
+                </section>
+
+                <div class="dashboard-actions">
+
+                    <a
+                        href="onboarding.html"
+                        class="btn btn-outline">
+
+                        Back
+
+                    </a>
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary">
+
+                        Continue
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-bottom">
+
+                © 2026 AdMarket. All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="../../assets/js/core/config.js"></script>
+<script src="../../assets/js/core/ui.js"></script>
+<script src="../../assets/js/core/modal.js"></script>
+<script src="../../assets/js/core/loader.js"></script>
+<script src="../../assets/js/core/toast.js"></script>
+<script src="../../assets/js/core/validator.js"></script>
+<script src="../../assets/js/core/theme.js"></script>
+<script src="../../assets/js/core/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        Add Product | AdMarket
+
+    </title>
+
+    <meta
+        name="description"
+        content="Create a new product listing on AdMarket.">
+
+    <link rel="stylesheet" href="../../assets/css/variables.css">
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/utilities.css">
+    <link rel="stylesheet" href="../../assets/css/components.css">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+
+</head>
+
+<body>
+
+    <div id="loader" class="loader">
+
+        <div class="spinner"></div>
+
+    </div>
+
+    <header class="dashboard-header">
+
+        <div class="container">
+
+            <a
+                href="dashboard.html"
+                class="navbar-brand">
+
+                <img
+                    src="../../assets/images/logo.png"
+                    alt="AdMarket Logo">
+
+                <span>
+
+                    AdMarket Seller
+
+                </span>
+
+            </a>
+
+        </div>
+
+    </header>
+
+    <main class="dashboard">
+
+        <div class="container">
+
+            <section class="section-header">
+
+                <h1>
+
+                    Add New Product
+
+                </h1>
+
+                <p>
+
+                    Complete the information below to publish a new product in your store.
+
+                </p>
+
+            </section>
+
+            <form id="add-product-form">
+
+                <!-- Basic Information -->
+
+                <section class="section">
+
+                    <div class="section-header">
+
+                        <h2>
+
+                            Basic Information
+
+                        </h2>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="product-name">
+
+                            Product Name
+
+                        </label>
+
+                        <input
+                            id="product-name"
+                            class="form-control"
+                            type="text"
+                            placeholder="Enter product name">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="product-category">
+
+                            Category
+
+                        </label>
+
+                        <select
+                            id="product-category"
+                            class="form-control">
+
+                            <option value="">
+
+                                Select Category
+
+                            </option>
+
+                            <option>Electronics</option>
+                            <option>Fashion</option>
+                            <option>Home & Living</option>
+                            <option>Beauty</option>
+                            <option>Sports</option>
+                            <option>Books</option>
+                            <option>Health</option>
+                            <option>Automotive</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="product-description">
+
+                            Description
+
+                        </label>
+
+                        <textarea
+                            id="product-description"
+                            class="form-control"
+                            rows="6"
+                            placeholder="Describe your product"></textarea>
+
+                    </div>
+
+                </section>
+
+                <!-- Pricing -->
+
+                <section class="section">
+
+                    <div class="section-header">
+
+                        <h2>
+
+                            Pricing
+
+                        </h2>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="product-price">
+
+                            Price (KES)
+
+                        </label>
+
+                        <input
+                            id="product-price"
+                            class="form-control"
+                            type="number"
+                            min="0"
+                            placeholder="0">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="product-stock">
+
+                            Stock Quantity
+
+                        </label>
+
+                        <input
+                            id="product-stock"
+                            class="form-control"
+                            type="number"
+                            min="0"
+                            placeholder="0">
+
+                    </div>
+
+                </section>
+
+                                <!-- Product Details -->
+
+                <section class="section">
+
+                    <div class="section-header">
+
+                        <h2>
+
+                            Product Details
+
+                        </h2>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="product-brand">
+
+                            Brand
+
+                        </label>
+
+                        <input
+                            id="product-brand"
+                            class="form-control"
+                            type="text"
+                            placeholder="Enter brand name">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="product-condition">
+
+                            Condition
+
+                        </label>
+
+                        <select
+                            id="product-condition"
+                            class="form-control">
+
+                            <option value="">
+
+                                Select Condition
+
+                            </option>
+
+                            <option>
+
+                                Brand New
+
+                            </option>
+
+                            <option>
+
+                                Refurbished
+
+                            </option>
+
+                            <option>
+
+                                Used - Like New
+
+                            </option>
+
+                            <option>
+
+                                Used - Good
+
+                            </option>
+
+                            <option>
+
+                                Used - Fair
+
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="product-sku">
+
+                            SKU (Optional)
+
+                        </label>
+
+                        <input
+                            id="product-sku"
+                            class="form-control"
+                            type="text"
+                            placeholder="Stock Keeping Unit">
+
+                    </div>
+
+                </section>
+
+                <!-- Images -->
+
+                <section class="section">
+
+                    <div class="section-header">
+
+                        <h2>
+
+                            Product Images
+
+                        </h2>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="product-images">
+
+                            Upload Images
+
+                        </label>
+
+                        <input
+                            id="product-images"
+                            class="form-control"
+                            type="file"
+                            accept="image/*"
+                            multiple>
+
+                        <small>
+
+                            Upload clear product images. You can select multiple images.
+
+                        </small>
+
+                    </div>
+
+                </section>
+
+                <!-- Shipping -->
+
+                <section class="section">
+
+                    <div class="section-header">
+
+                        <h2>
+
+                            Shipping Information
+
+                        </h2>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="product-weight">
+
+                            Weight (kg)
+
+                        </label>
+
+                        <input
+                            id="product-weight"
+                            class="form-control"
+                            type="number"
+                            step="0.01"
+                            min="0"
+                            placeholder="0.00">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="shipping-notes">
+
+                            Shipping Notes
+
+                        </label>
+
+                        <textarea
+                            id="shipping-notes"
+                            class="form-control"
+                            rows="4"
+                            placeholder="Optional delivery or packaging information"></textarea>
+
+                    </div>
+
+                </section>
+
+                                <!-- Product Visibility -->
+
+                <section class="section">
+
+                    <div class="section-header">
+
+                        <h2>
+
+                            Product Visibility
+
+                        </h2>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="product-status">
+
+                            Listing Status
+
+                        </label>
+
+                        <select
+                            id="product-status"
+                            class="form-control">
+
+                            <option value="draft">
+
+                                Save as Draft
+
+                            </option>
+
+                            <option value="active">
+
+                                Publish Immediately
+
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <label class="checkbox">
+
+                        <input
+                            type="checkbox"
+                            id="accept-product-policy">
+
+                        <span>
+
+                            I confirm that this product complies with AdMarket's marketplace rules and does not violate any prohibited items policy.
+
+                        </span>
+
+                    </label>
+
+                </section>
+
+                <!-- Actions -->
+
+                <section class="section">
+
+                    <div class="dashboard-actions">
+
+                        <a
+                            href="products.html"
+                            class="btn btn-outline">
+
+                            Cancel
+
+                        </a>
+
+                        <button
+                            type="button"
+                            class="btn btn-outline">
+
+                            Save Draft
+
+                        </button>
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary">
+
+                            Publish Product
+
+                        </button>
+
+                    </div>
+
+                </section>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-bottom">
+
+                © 2026 AdMarket. All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="../../assets/js/core/config.js"></script>
+<script src="../../assets/js/core/ui.js"></script>
+<script src="../../assets/js/core/modal.js"></script>
+<script src="../../assets/js/core/loader.js"></script>
+<script src="../../assets/js/core/toast.js"></script>
+<script src="../../assets/js/core/validator.js"></script>
+<script src="../../assets/js/core/theme.js"></script>
+<script src="../../assets/js/core/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        Payment Method | AdMarket
+
+    </title>
+
+    <meta
+        name="description"
+        content="Choose your payment method.">
+
+    <link rel="stylesheet" href="../../assets/css/variables.css">
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/utilities.css">
+    <link rel="stylesheet" href="../../assets/css/components.css">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+
+</head>
+
+<body>
+
+<div id="loader" class="loader">
+
+    <div class="spinner"></div>
+
+</div>
+
+<header class="dashboard-header">
+
+    <div class="container">
+
+        <a
+            href="../../index.html"
+            class="navbar-brand">
+
+            <img
+                src="../../assets/images/logo.png"
+                alt="AdMarket Logo">
+
+            <span>
+
+                AdMarket
+
+            </span>
+
+        </a>
+
+    </div>
+
+</header>
+
+<main class="dashboard">
+
+<div class="container">
+
+<section class="section-header">
+
+<h1>
+
+Choose Payment Method
+
+</h1>
+
+<p>
+
+Select how you would like to pay for your order.
+
+</p>
+
+</section>
+
+<!-- Buyer Protection -->
+
+<section class="section">
+
+<div class="alert alert-success">
+
+<h2>
+
+🛡️ AdMarket Buyer Protection
+
+</h2>
+
+<p>
+
+Your payment is securely held by AdMarket until your order is delivered or any dispute has been resolved. Sellers do not receive payment immediately after you pay.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- Checkout Progress -->
+
+<section class="section">
+
+<div class="checkout-progress">
+
+<strong>
+
+Step 2 of 4
+
+</strong>
+
+<p>
+
+Shipping → Payment → Review → Complete
+
+</p>
+
+</div>
+
+</section>
+
+<!-- Payment Methods -->
+
+<section class="section">
+
+<div class="section-header">
+
+<h2>
+
+Payment Options
+
+</h2>
+
+</div>
+
+<label class="radio">
+
+<input
+type="radio"
+name="payment-method"
+value="mpesa"
+checked>
+
+<span>
+
+M-Pesa
+
+</span>
+
+</label>
+
+<label class="radio">
+
+<input
+type="radio"
+name="payment-method"
+value="card">
+
+<span>
+
+Visa / Mastercard
+
+</span>
+
+</label>
+
+<label class="radio">
+
+<input
+type="radio"
+name="payment-method"
+value="paypal">
+
+<span>
+
+PayPal
+
+</span>
+
+</label>
+
+<label class="radio">
+
+<input
+type="radio"
+name="payment-method"
+value="bank">
+
+<span>
+
+Bank Transfer
+
+</span>
+
+</label>
+
+</section>
+
+<!-- Dynamic Payment Area -->
+
+<section class="section">
+
+<div class="section-header">
+
+<h2>
+
+Payment Details
+
+</h2>
+
+</div>
+
+<div id="payment-method-container">
+
+<p>
+
+The selected payment method details will appear here.
+
+</p>
+
+</div>
+
+</section>
+
+            <!-- Order Summary -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Order Summary
+
+                    </h2>
+
+                </div>
+
+                <div class="dashboard-table">
+
+                    <table>
+
+                        <tbody>
+
+                            <tr>
+
+                                <th>Items</th>
+
+                                <td>0</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <th>Subtotal</th>
+
+                                <td>KES 0</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <th>Shipping</th>
+
+                                <td>KES 0</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <th>Total</th>
+
+                                <td>
+
+                                    <strong>
+
+                                        KES 0
+
+                                    </strong>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+            <!-- Secure Payment Notice -->
+
+            <section class="section">
+
+                <div class="alert alert-info">
+
+                    <h2>
+
+                        🔒 Secure Checkout
+
+                    </h2>
+
+                    <p>
+
+                        Payments are encrypted during transmission. AdMarket securely holds your payment until your order is successfully delivered or any dispute is resolved.
+
+                    </p>
+
+                </div>
+
+            </section>
+
+            <!-- Navigation -->
+
+            <section class="section">
+
+                <div class="dashboard-actions">
+
+                    <a
+                        href="shipping.html"
+                        class="btn btn-outline">
+
+                        Back
+
+                    </a>
+
+                    <a
+                        href="review.html"
+                        class="btn btn-primary">
+
+                        Continue to Review
+
+                    </a>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-bottom">
+
+                © 2026 AdMarket. All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="../../assets/js/core/config.js"></script>
+<script src="../../assets/js/core/ui.js"></script>
+<script src="../../assets/js/core/modal.js"></script>
+<script src="../../assets/js/core/loader.js"></script>
+<script src="../../assets/js/core/toast.js"></script>
+<script src="../../assets/js/core/validator.js"></script>
+<script src="../../assets/js/core/theme.js"></script>
+<script src="../../assets/js/core/app.js"></script>
+</body>
+
+</html>

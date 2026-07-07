@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        Shopping Cart | AdMarket
+
+    </title>
+
+    <meta
+        name="description"
+        content="Your AdMarket shopping cart.">
+
+    <link rel="stylesheet" href="../../assets/css/variables.css">
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/utilities.css">
+    <link rel="stylesheet" href="../../assets/css/components.css">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+
+</head>
+
+<body>
+
+    <!-- Loader -->
+
+    <div id="loader" class="loader">
+
+        <div class="spinner"></div>
+
+    </div>
+
+    <!-- Header -->
+
+    <header class="dashboard-header">
+
+        <div class="container">
+
+            <a
+                href="../../index.html"
+                class="navbar-brand">
+
+                <img
+                    src="../../assets/images/logo.png"
+                    alt="AdMarket Logo">
+
+                <span>
+
+                    AdMarket
+
+                </span>
+
+            </a>
+
+            <div class="dashboard-actions">
+
+                <a
+                    href="products.html"
+                    class="btn btn-outline">
+
+                    Continue Shopping
+
+                </a>
+
+                <button
+                    class="btn btn-primary">
+
+                    Profile
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="dashboard">
+
+        <div class="container">
+
+            <section class="section-header">
+
+                <h1>
+
+                    Shopping Cart
+
+                </h1>
+
+                <p>
+
+                    Review the items in your cart before checkout.
+
+                </p>
+
+            </section>
+
+            <!-- Cart Items -->
+
+            <section class="dashboard-table">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Product</th>
+
+                            <th>Price</th>
+
+                            <th>Quantity</th>
+
+                            <th>Total</th>
+
+                            <th>Action</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="cart-items">
+
+                        <tr>
+
+                            <td colspan="5">
+
+                                Your cart is empty.
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+            <!-- Cart Summary -->
+
+            <section class="cart-summary">
+
+                <div class="summary-card">
+
+                    <h2>
+
+                        Order Summary
+
+                    </h2>
+
+                    <div class="summary-row">
+
+                        <span>
+
+                            Subtotal
+
+                        </span>
+
+                        <strong>
+
+                            KES 0
+
+                        </strong>
+
+                    </div>
+
+                    <div class="summary-row">
+
+                        <span>
+
+                            Delivery
+
+                        </span>
+
+                        <strong>
+
+                            KES 0
+
+                        </strong>
+
+                    </div>
+
+                    <div class="summary-row total">
+
+                        <span>
+
+                            Total
+
+                        </span>
+
+                        <strong>
+
+                            KES 0
+
+                        </strong>
+
+                    </div>
+
+                    <button
+                        class="btn btn-primary">
+
+                        Proceed to Checkout
+
+                    </button>
+
+                </div>
+
+            </section>
+
+                        <!-- Recommended Products -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        You May Also Like
+
+                    </h2>
+
+                    <p>
+
+                        Discover more products while you're here.
+
+                    </p>
+
+                </div>
+
+                <div
+                    id="recommended-products-grid"
+                    class="products-grid">
+
+                </div>
+
+            </section>
+
+            <!-- Recently Viewed -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Recently Viewed
+
+                    </h2>
+
+                </div>
+
+                <div
+                    id="recently-viewed-grid"
+                    class="products-grid">
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-bottom">
+
+                © 2026 AdMarket. All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="../../assets/js/core/config.js"></script>
+<script src="../../assets/js/core/ui.js"></script>
+<script src="../../assets/js/core/modal.js"></script>
+<script src="../../assets/js/core/loader.js"></script>
+<script src="../../assets/js/core/toast.js"></script>
+<script src="../../assets/js/core/validator.js"></script>
+<script src="../../assets/js/core/theme.js"></script>
+<script src="../../assets/js/core/app.js"></script>
+</body>
+
+</html>
+

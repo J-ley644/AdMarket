@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        Store Profile | AdMarket
+
+    </title>
+
+    <meta
+        name="description"
+        content="Manage your store profile and business information.">
+
+    <link rel="stylesheet" href="../../assets/css/variables.css">
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/utilities.css">
+    <link rel="stylesheet" href="../../assets/css/components.css">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+
+</head>
+
+<body>
+
+    <div id="loader" class="loader">
+
+        <div class="spinner"></div>
+
+    </div>
+
+    <header class="dashboard-header">
+
+        <div class="container">
+
+            <a
+                href="dashboard.html"
+                class="navbar-brand">
+
+                <img
+                    src="../../assets/images/logo.png"
+                    alt="AdMarket Logo">
+
+                <span>
+
+                    AdMarket Seller
+
+                </span>
+
+            </a>
+
+        </div>
+
+    </header>
+
+    <main class="dashboard">
+
+        <div class="container">
+
+            <section class="section-header">
+
+                <h1>
+
+                    Store Profile
+
+                </h1>
+
+                <p>
+
+                    Update your store details and business information.
+
+                </p>
+
+            </section>
+
+            <form id="store-profile-form">
+
+                <!-- Store Information -->
+
+                <section class="section">
+
+                    <div class="section-header">
+
+                        <h2>
+
+                            Store Information
+
+                        </h2>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="store-name">
+
+                            Store Name
+
+                        </label>
+
+                        <input
+                            id="store-name"
+                            class="form-control"
+                            type="text"
+                            placeholder="Enter your store name">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="store-description">
+
+                            Store Description
+
+                        </label>
+
+                        <textarea
+                            id="store-description"
+                            class="form-control"
+                            rows="5"
+                            placeholder="Describe your business"></textarea>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="store-logo">
+
+                            Store Logo
+
+                        </label>
+
+                        <input
+                            id="store-logo"
+                            class="form-control"
+                            type="file"
+                            accept="image/*">
+
+                    </div>
+
+                </section>
+
+                <!-- Contact Information -->
+
+                <section class="section">
+
+                    <div class="section-header">
+
+                        <h2>
+
+                            Contact Information
+
+                        </h2>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="business-email">
+
+                            Business Email
+
+                        </label>
+
+                        <input
+                            id="business-email"
+                            class="form-control"
+                            type="email">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="business-phone">
+
+                            Business Phone
+
+                        </label>
+
+                        <input
+                            id="business-phone"
+                            class="form-control"
+                            type="tel">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="business-address">
+
+                            Business Address
+
+                        </label>
+
+                        <textarea
+                            id="business-address"
+                            class="form-control"
+                            rows="4"></textarea>
+
+                    </div>
+
+                </section>
+
+                <!-- Social Media -->
+
+                <section class="section">
+
+                    <div class="section-header">
+
+                        <h2>
+
+                            Social Media
+
+                        </h2>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="facebook-link">
+
+                            Facebook
+
+                        </label>
+
+                        <input
+                            id="facebook-link"
+                            class="form-control"
+                            type="url"
+                            placeholder="https://">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="instagram-link">
+
+                            Instagram
+
+                        </label>
+
+                        <input
+                            id="instagram-link"
+                            class="form-control"
+                            type="url"
+                            placeholder="https://">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="website-link">
+
+                            Website
+
+                        </label>
+
+                        <input
+                            id="website-link"
+                            class="form-control"
+                            type="url"
+                            placeholder="https://">
+
+                    </div>
+
+                </section>
+
+                                <!-- Business Details -->
+
+                <section class="section">
+
+                    <div class="section-header">
+
+                        <h2>
+
+                            Business Details
+
+                        </h2>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="business-hours">
+
+                            Operating Hours
+
+                        </label>
+
+                        <input
+                            id="business-hours"
+                            class="form-control"
+                            type="text"
+                            placeholder="Example: Monday - Saturday, 8:00 AM - 6:00 PM">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="delivery-areas">
+
+                            Delivery Coverage
+
+                        </label>
+
+                        <textarea
+                            id="delivery-areas"
+                            class="form-control"
+                            rows="3"
+                            placeholder="List the towns, counties or regions you deliver to"></textarea>
+
+                    </div>
+
+                </section>
+
+                <!-- Verification Status -->
+
+                <section class="section">
+
+                    <div class="section-header">
+
+                        <h2>
+
+                            Business Verification
+
+                        </h2>
+
+                    </div>
+
+                    <div class="dashboard-table">
+
+                        <table>
+
+                            <tbody>
+
+                                <tr>
+
+                                    <th>Verification Status</th>
+
+                                    <td>Verified</td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <th>Verification Date</th>
+
+                                    <td>--</td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <th>Seller Level</th>
+
+                                    <td>Standard Seller</td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
+
+                <!-- Actions -->
+
+                <section class="section">
+
+                    <div class="dashboard-actions">
+
+                        <a
+                            href="dashboard.html"
+                            class="btn btn-outline">
+
+                            Cancel
+
+                        </a>
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary">
+
+                            Save Profile
+
+                        </button>
+
+                    </div>
+
+                </section>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-bottom">
+
+                © 2026 AdMarket. All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="../../assets/js/core/config.js"></script>
+<script src="../../assets/js/core/ui.js"></script>
+<script src="../../assets/js/core/modal.js"></script>
+<script src="../../assets/js/core/loader.js"></script>
+<script src="../../assets/js/core/toast.js"></script>
+<script src="../../assets/js/core/validator.js"></script>
+<script src="../../assets/js/core/theme.js"></script>
+<script src="../../assets/js/core/app.js"></script>
+
+</body>
+
+</html>

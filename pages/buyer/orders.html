@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        My Orders | AdMarket
+
+    </title>
+
+    <meta
+        name="description"
+        content="View and track your AdMarket orders.">
+
+    <link rel="stylesheet" href="../../assets/css/variables.css">
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/utilities.css">
+    <link rel="stylesheet" href="../../assets/css/components.css">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+
+</head>
+
+<body>
+
+    <!-- Loader -->
+
+    <div id="loader" class="loader">
+
+        <div class="spinner"></div>
+
+    </div>
+
+    <!-- Header -->
+
+    <header class="dashboard-header">
+
+        <div class="container">
+
+            <a
+                href="../../index.html"
+                class="navbar-brand">
+
+                <img
+                    src="../../assets/images/logo.png"
+                    alt="AdMarket Logo">
+
+                <span>
+
+                    AdMarket
+
+                </span>
+
+            </a>
+
+            <div class="dashboard-actions">
+
+                <a
+                    href="dashboard.html"
+                    class="btn btn-outline">
+
+                    Dashboard
+
+                </a>
+
+                <a
+                    href="products.html"
+                    class="btn btn-primary">
+
+                    Shop
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="dashboard">
+
+        <div class="container">
+
+            <section class="section-header">
+
+                <h1>
+
+                    My Orders
+
+                </h1>
+
+                <p>
+
+                    Track and manage all your orders in one place.
+
+                </p>
+
+            </section>
+
+            <!-- Order Filters -->
+
+            <section class="product-filters">
+
+                <select
+                    class="form-control"
+                    id="order-status">
+
+                    <option value="">
+
+                        All Orders
+
+                    </option>
+
+                    <option>
+
+                        Pending
+
+                    </option>
+
+                    <option>
+
+                        Processing
+
+                    </option>
+
+                    <option>
+
+                        Shipped
+
+                    </option>
+
+                    <option>
+
+                        Delivered
+
+                    </option>
+
+                    <option>
+
+                        Cancelled
+
+                    </option>
+
+                </select>
+
+                <input
+                    type="search"
+                    id="order-search"
+                    class="form-control"
+                    placeholder="Search by Order ID">
+
+            </section>
+
+            <!-- Orders Table -->
+
+            <section class="dashboard-table">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Order ID</th>
+
+                            <th>Date</th>
+
+                            <th>Items</th>
+
+                            <th>Total</th>
+
+                            <th>Status</th>
+
+                            <th>Action</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="orders-table">
+
+                        <tr>
+
+                            <td colspan="6">
+
+                                No orders found.
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+            <!-- Empty State -->
+
+            <section
+                class="empty-state"
+                hidden>
+
+                <h2>
+
+                    No Orders Yet
+
+                </h2>
+
+                <p>
+
+                    Your orders will appear here after your first purchase.
+
+                </p>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-bottom">
+
+                © 2026 AdMarket. All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="../../assets/js/core/config.js"></script>
+<script src="../../assets/js/core/ui.js"></script>
+<script src="../../assets/js/core/modal.js"></script>
+<script src="../../assets/js/core/loader.js"></script>
+<script src="../../assets/js/core/toast.js"></script>
+<script src="../../assets/js/core/validator.js"></script>
+<script src="../../assets/js/core/theme.js"></script>
+<script src="../../assets/js/core/app.js"></script>
+</body>
+
+</html>

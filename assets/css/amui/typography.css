@@ -1,0 +1,215 @@
+/* ==========================================
+   AMUI Typography
+   Version: 1.0.0
+   Author : J.LEY
+========================================== */
+
+/* Base */
+
+body{
+
+    font-family:var(--am-font);
+
+    font-size:16px;
+
+    line-height:1.6;
+
+    color:var(--am-text);
+
+    background:var(--am-bg);
+
+}
+
+/* Display */
+
+.am-display-1{
+
+    font-size:4rem;
+
+    font-weight:800;
+
+    line-height:1.1;
+
+}
+
+.am-display-2{
+
+    font-size:3rem;
+
+    font-weight:800;
+
+    line-height:1.15;
+
+}
+
+/* Headings */
+
+.am-h1{
+
+    font-size:2.5rem;
+
+    font-weight:700;
+
+    line-height:1.2;
+
+}
+
+.am-h2{
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    line-height:1.25;
+
+}
+
+.am-h3{
+
+    font-size:1.5rem;
+
+    font-weight:600;
+
+    line-height:1.3;
+
+}
+
+.am-h4{
+
+    font-size:1.25rem;
+
+    font-weight:600;
+
+}
+
+.am-h5{
+
+    font-size:1.125rem;
+
+    font-weight:600;
+
+}
+
+.am-h6{
+
+    font-size:1rem;
+
+    font-weight:600;
+
+}
+
+/* Body */
+
+.am-body-lg{
+
+    font-size:1.125rem;
+
+}
+
+.am-body{
+
+    font-size:1rem;
+
+}
+
+.am-body-sm{
+
+    font-size:.875rem;
+
+}
+
+/* Labels */
+
+.am-label{
+
+    display:block;
+
+    margin-bottom:.5rem;
+
+    font-size:.875rem;
+
+    font-weight:600;
+
+}
+
+/* Caption */
+
+.am-caption{
+
+    font-size:.75rem;
+
+    color:var(--am-text-light);
+
+}
+
+/* Links */
+
+.am-link{
+
+    color:var(--am-primary);
+
+    text-decoration:none;
+
+    transition:var(--am-transition);
+
+}
+
+.am-link:hover{
+
+    color:var(--am-primary-hover);
+
+    text-decoration:underline;
+
+}
+
+/* Alignment */
+
+.am-text-left{
+
+    text-align:left;
+
+}
+
+.am-text-center{
+
+    text-align:center;
+
+}
+
+.am-text-right{
+
+    text-align:right;
+
+}
+
+/* Weight */
+
+.am-fw-light{
+
+    font-weight:300;
+
+}
+
+.am-fw-normal{
+
+    font-weight:400;
+
+}
+
+.am-fw-medium{
+
+    font-weight:500;
+
+}
+
+.am-fw-semibold{
+
+    font-weight:600;
+
+}
+
+.am-fw-bold{
+
+    font-weight:700;
+
+}

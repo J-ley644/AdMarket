@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        Payouts | AdMarket
+
+    </title>
+
+    <meta
+        name="description"
+        content="Manage payout requests and payment methods.">
+
+    <link rel="stylesheet" href="../../assets/css/variables.css">
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/utilities.css">
+    <link rel="stylesheet" href="../../assets/css/components.css">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+
+</head>
+
+<body>
+
+    <div id="loader" class="loader">
+
+        <div class="spinner"></div>
+
+    </div>
+
+    <header class="dashboard-header">
+
+        <div class="container">
+
+            <a
+                href="dashboard.html"
+                class="navbar-brand">
+
+                <img
+                    src="../../assets/images/logo.png"
+                    alt="AdMarket Logo">
+
+                <span>
+
+                    AdMarket Seller
+
+                </span>
+
+            </a>
+
+        </div>
+
+    </header>
+
+    <main class="dashboard">
+
+        <div class="container">
+
+            <section class="section-header">
+
+                <h1>
+
+                    Payouts
+
+                </h1>
+
+                <p>
+
+                    Request withdrawals and manage your payout methods.
+
+                </p>
+
+            </section>
+
+            <!-- Balance Overview -->
+
+            <section class="dashboard-stats">
+
+                <article class="stat-card">
+
+                    <h2>
+
+                        KES 0
+
+                    </h2>
+
+                    <p>
+
+                        Available Balance
+
+                    </p>
+
+                </article>
+
+                <article class="stat-card">
+
+                    <h2>
+
+                        KES 0
+
+                    </h2>
+
+                    <p>
+
+                        Pending Payouts
+
+                    </p>
+
+                </article>
+
+                <article class="stat-card">
+
+                    <h2>
+
+                        KES 0
+
+                    </h2>
+
+                    <p>
+
+                        Completed Payouts
+
+                    </p>
+
+                </article>
+
+            </section>
+
+            <!-- Request Payout -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Request Payout
+
+                    </h2>
+
+                </div>
+
+                <form id="payout-request-form">
+
+                    <div class="form-group">
+
+                        <label for="payout-method">
+
+                            Payout Method
+
+                        </label>
+
+                        <select
+                            id="payout-method"
+                            class="form-control">
+
+                            <option value="">
+
+                                Select Method
+
+                            </option>
+
+                            <option>
+
+                                M-Pesa
+
+                            </option>
+
+                            <option>
+
+                                Bank Transfer
+
+                            </option>
+
+                            <option>
+
+                                PayPal
+
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="payout-amount">
+
+                            Amount (KES)
+
+                        </label>
+
+                        <input
+                            id="payout-amount"
+                            class="form-control"
+                            type="number"
+                            min="0"
+                            placeholder="0">
+
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary">
+
+                        Submit Request
+
+                    </button>
+
+                </form>
+
+            </section>
+
+            <!-- Payout History -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Payout History
+
+                    </h2>
+
+                </div>
+
+                <div class="dashboard-table">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Date</th>
+                                <th>Method</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="payout-history">
+
+                            <tr>
+
+                                <td colspan="4">
+
+                                    No payout history available.
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+                        <!-- Saved Payout Methods -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Saved Payout Methods
+
+                    </h2>
+
+                </div>
+
+                <div class="dashboard-table">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Method</th>
+                                <th>Account</th>
+                                <th>Status</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td colspan="3">
+
+                                    No payout methods added.
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+            <!-- Recent Activity -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Recent Activity
+
+                    </h2>
+
+                </div>
+
+                <div class="activity-feed">
+
+                    <div class="activity-item">
+
+                        Your payout activity will appear here.
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Actions -->
+
+            <section class="section">
+
+                <div class="dashboard-actions">
+
+                    <button
+                        type="button"
+                        class="btn btn-outline">
+
+                        Export Payout History
+
+                    </button>
+
+                    <button
+                        type="button"
+                        class="btn btn-outline">
+
+                        Refresh
+
+                    </button>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-bottom">
+
+                © 2026 AdMarket. All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="../../assets/js/core/config.js"></script>
+<script src="../../assets/js/core/ui.js"></script>
+<script src="../../assets/js/core/modal.js"></script>
+<script src="../../assets/js/core/loader.js"></script>
+<script src="../../assets/js/core/toast.js"></script>
+<script src="../../assets/js/core/validator.js"></script>
+<script src="../../assets/js/core/theme.js"></script>
+<script src="../../assets/js/core/app.js"></script>
+</body>
+
+</html>
+

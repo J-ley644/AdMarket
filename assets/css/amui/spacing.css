@@ -1,0 +1,83 @@
+/* ==========================================
+   AMUI Spacing
+========================================== */
+
+:root{
+
+    --am-space-0:0;
+
+    --am-space-1:4px;
+
+    --am-space-2:8px;
+
+    --am-space-3:12px;
+
+    --am-space-4:16px;
+
+    --am-space-5:20px;
+
+    --am-space-6:24px;
+
+    --am-space-8:32px;
+
+    --am-space-10:40px;
+
+    --am-space-12:48px;
+
+    --am-space-16:64px;
+
+}
+
+.am-mt-1{
+
+    margin-top:var(--am-space-1);
+
+}
+
+.am-mt-2{
+
+    margin-top:var(--am-space-2);
+
+}
+
+.am-mt-4{
+
+    margin-top:var(--am-space-4);
+
+}
+
+.am-mt-6{
+
+    margin-top:var(--am-space-6);
+
+}
+
+.am-mb-2{
+
+    margin-bottom:var(--am-space-2);
+
+}
+
+.am-mb-4{
+
+    margin-bottom:var(--am-space-4);
+
+}
+
+.am-p-2{
+
+    padding:var(--am-space-2);
+
+}
+
+.am-p-4{
+
+    padding:var(--am-space-4);
+
+}
+
+.am-p-6{
+
+    padding:var(--am-space-6);
+
+}

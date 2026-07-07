@@ -1,0 +1,335 @@
+/* ==========================================
+   AMUI Buttons
+   Version: 1.0.0
+   Author : J.LEY
+========================================== */
+
+/* ==========
+   Base Button
+========== */
+
+.am-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:.5rem;
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    user-select:none;
+
+    white-space:nowrap;
+
+    text-decoration:none;
+
+    font-family:var(--am-font);
+
+    font-weight:600;
+
+    font-size:1rem;
+
+    padding:.75rem 1.25rem;
+
+    border-radius:var(--am-radius-md);
+
+    transition:all var(--am-transition);
+
+}
+
+/* ==========
+   Sizes
+========== */
+
+.am-btn-xs{
+
+    font-size:.75rem;
+
+    padding:.35rem .6rem;
+
+}
+
+.am-btn-sm{
+
+    font-size:.875rem;
+
+    padding:.55rem .9rem;
+
+}
+
+.am-btn-md{
+
+    font-size:1rem;
+
+    padding:.75rem 1.25rem;
+
+}
+
+.am-btn-lg{
+
+    font-size:1.125rem;
+
+    padding:.95rem 1.5rem;
+
+}
+
+.am-btn-xl{
+
+    font-size:1.25rem;
+
+    padding:1.1rem 2rem;
+
+}
+
+/* ==========
+   Variants
+========== */
+
+.am-btn-primary{
+
+    background:var(--am-primary);
+
+    color:var(--am-text-inverse);
+
+}
+
+.am-btn-primary:hover{
+
+    background:var(--am-primary-hover);
+
+}
+
+.am-btn-secondary{
+
+    background:var(--am-secondary);
+
+    color:#fff;
+
+}
+
+.am-btn-success{
+
+    background:var(--am-success);
+
+    color:#fff;
+
+}
+
+.am-btn-warning{
+
+    background:var(--am-warning);
+
+    color:#fff;
+
+}
+
+.am-btn-danger{
+
+    background:var(--am-danger);
+
+    color:#fff;
+
+}
+
+.am-btn-info{
+
+    background:var(--am-info);
+
+    color:#fff;
+
+}
+
+/* ==========
+   Outline
+========== */
+
+.am-btn-outline{
+
+    background:transparent;
+
+    border:1px solid var(--am-border);
+
+    color:var(--am-text);
+
+}
+
+.am-btn-outline:hover{
+
+    background:var(--am-surface);
+
+}
+
+/* ==========
+   Ghost
+========== */
+
+.am-btn-ghost{
+
+    background:transparent;
+
+    color:var(--am-primary);
+
+}
+
+.am-btn-ghost:hover{
+
+    background:var(--am-surface-hover);
+
+}
+
+/* ==========
+   Text
+========== */
+
+.am-btn-text{
+
+    background:none;
+
+    color:var(--am-primary);
+
+    padding:0;
+
+}
+
+/* ==========
+   Full Width
+========== */
+
+.am-btn-block{
+
+    width:100%;
+
+}
+
+/* ==========
+   Rounded
+========== */
+
+.am-btn-pill{
+
+    border-radius:999px;
+
+}
+
+/* ==========
+   Square Icon Button
+========== */
+
+.am-btn-icon{
+
+    width:44px;
+
+    height:44px;
+
+    padding:0;
+
+}
+
+/* ==========
+   Hover
+========== */
+
+.am-btn:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/* ==========
+   Active
+========== */
+
+.am-btn:active{
+
+    transform:scale(.98);
+
+}
+
+/* ==========
+   Focus
+========== */
+
+.am-btn:focus-visible{
+
+    outline:3px solid rgba(37,99,235,.25);
+
+    outline-offset:3px;
+
+}
+
+/* ==========
+   Disabled
+========== */
+
+.am-btn:disabled,
+
+.am-btn.is-disabled{
+
+    opacity:.6;
+
+    cursor:not-allowed;
+
+    transform:none;
+
+}
+
+/* ==========
+   Loading
+========== */
+
+.am-btn.is-loading{
+
+    pointer-events:none;
+
+    opacity:.8;
+
+}
+
+.am-btn-spinner{
+
+    width:16px;
+
+    height:16px;
+
+    border:2px solid rgba(255,255,255,.35);
+
+    border-top-color:#fff;
+
+    border-radius:50%;
+
+    animation:am-spin .8s linear infinite;
+
+}
+
+/* ==========
+   Button Group
+========== */
+
+.am-btn-group{
+
+    display:inline-flex;
+
+    gap:.5rem;
+
+}
+
+/* ==========
+   Spinner Animation
+========== */
+
+@keyframes am-spin{
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        Seller Applications | AdMarket Admin
+
+    </title>
+
+    <meta
+        name="description"
+        content="Review and manage seller applications.">
+
+    <link rel="stylesheet" href="../../assets/css/variables.css">
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/utilities.css">
+    <link rel="stylesheet" href="../../assets/css/components.css">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+
+</head>
+
+<body>
+
+    <div id="loader" class="loader">
+
+        <div class="spinner"></div>
+
+    </div>
+
+    <header class="dashboard-header">
+
+        <div class="container">
+
+            <a
+                href="dashboard.html"
+                class="navbar-brand">
+
+                <img
+                    src="../../assets/images/logo.png"
+                    alt="AdMarket Logo">
+
+                <span>
+
+                    AdMarket Admin
+
+                </span>
+
+            </a>
+
+        </div>
+
+    </header>
+
+    <main class="dashboard">
+
+        <div class="container">
+
+            <section class="section-header">
+
+                <h1>
+
+                    Seller Applications
+
+                </h1>
+
+                <p>
+
+                    Review, approve, reject, or request additional information from seller applicants.
+
+                </p>
+
+            </section>
+
+            <!-- Filters -->
+
+            <section class="product-filters">
+
+                <input
+                    id="application-search"
+                    class="form-control"
+                    type="search"
+                    placeholder="Search by applicant, store or application ID">
+
+                <select
+                    id="application-status"
+                    class="form-control">
+
+                    <option value="">
+
+                        All Statuses
+
+                    </option>
+
+                    <option>
+
+                        Pending Review
+
+                    </option>
+
+                    <option>
+
+                        Under Verification
+
+                    </option>
+
+                    <option>
+
+                        Needs More Information
+
+                    </option>
+
+                    <option>
+
+                        Approved
+
+                    </option>
+
+                    <option>
+
+                        Rejected
+
+                    </option>
+
+                </select>
+
+            </section>
+
+            <!-- Applications Table -->
+
+            <section class="dashboard-table">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>ID</th>
+
+                            <th>Applicant</th>
+
+                            <th>Store</th>
+
+                            <th>Seller Type</th>
+
+                            <th>Status</th>
+
+                            <th>Submitted</th>
+
+                            <th>Action</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="applications-table">
+
+                        <tr>
+
+                            <td colspan="7">
+
+                                No seller applications found.
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+                        <!-- Bulk Actions -->
+
+            <section class="section">
+
+                <div class="dashboard-actions">
+
+                    <button
+                        type="button"
+                        class="btn btn-outline">
+
+                        Export Applications
+
+                    </button>
+
+                    <button
+                        type="button"
+                        class="btn btn-outline">
+
+                        Refresh
+
+                    </button>
+
+                </div>
+
+            </section>
+
+            <!-- Pagination -->
+
+            <section class="section">
+
+                <div class="pagination">
+
+                    <button
+                        class="btn btn-outline"
+                        type="button">
+
+                        Previous
+
+                    </button>
+
+                    <span>
+
+                        Page 1 of 1
+
+                    </span>
+
+                    <button
+                        class="btn btn-outline"
+                        type="button">
+
+                        Next
+
+                    </button>
+
+                </div>
+
+            </section>
+
+            <!-- Admin Notes -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Verification Guidelines
+
+                    </h2>
+
+                </div>
+
+                <div class="info-card">
+
+                    <ul>
+
+                        <li>Verify that the applicant's identity matches the submitted documents.</li>
+
+                        <li>Ensure uploaded images are clear and readable.</li>
+
+                        <li>Verify business registration documents for registered businesses.</li>
+
+                        <li>Request more information if documents are incomplete or unclear.</li>
+
+                        <li>Reject applications only when verification requirements cannot be met or fraud is suspected.</li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-bottom">
+
+                © 2026 AdMarket. All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="../../assets/js/core/config.js"></script>
+<script src="../../assets/js/core/ui.js"></script>
+<script src="../../assets/js/core/modal.js"></script>
+<script src="../../assets/js/core/loader.js"></script>
+<script src="../../assets/js/core/toast.js"></script>
+<script src="../../assets/js/core/validator.js"></script>
+<script src="../../assets/js/core/theme.js"></script>
+<script src="../../assets/js/core/app.js"></script>
+</body>
+
+</html>

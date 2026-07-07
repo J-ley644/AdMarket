@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        Reports & Moderation | AdMarket Admin
+
+    </title>
+
+    <meta
+        name="description"
+        content="Review and manage reports submitted by marketplace users.">
+
+    <link rel="stylesheet" href="../../assets/css/variables.css">
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/utilities.css">
+    <link rel="stylesheet" href="../../assets/css/components.css">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+
+</head>
+
+<body>
+
+    <div id="loader" class="loader">
+
+        <div class="spinner"></div>
+
+    </div>
+
+    <header class="dashboard-header">
+
+        <div class="container">
+
+            <a
+                href="dashboard.html"
+                class="navbar-brand">
+
+                <img
+                    src="../../assets/images/logo.png"
+                    alt="AdMarket Logo">
+
+                <span>
+
+                    AdMarket Admin
+
+                </span>
+
+            </a>
+
+        </div>
+
+    </header>
+
+    <main class="dashboard">
+
+        <div class="container">
+
+            <section class="section-header">
+
+                <h1>
+
+                    Reports & Moderation
+
+                </h1>
+
+                <p>
+
+                    Review reports submitted by buyers and sellers and take moderation actions.
+
+                </p>
+
+            </section>
+
+            <!-- Search & Filters -->
+
+            <section class="product-filters">
+
+                <input
+                    id="report-search"
+                    class="form-control"
+                    type="search"
+                    placeholder="Search by report ID, user or product">
+
+                <select
+                    id="report-type"
+                    class="form-control">
+
+                    <option value="">All Report Types</option>
+                    <option>Seller</option>
+                    <option>Buyer</option>
+                    <option>Product</option>
+                    <option>Order</option>
+                    <option>Message</option>
+
+                </select>
+
+                <select
+                    id="report-status"
+                    class="form-control">
+
+                    <option value="">All Statuses</option>
+                    <option>Open</option>
+                    <option>Under Investigation</option>
+                    <option>Resolved</option>
+                    <option>Dismissed</option>
+
+                </select>
+
+            </section>
+
+            <!-- Reports Table -->
+
+            <section class="dashboard-table">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Report ID</th>
+                            <th>Reported Item</th>
+                            <th>Reported By</th>
+                            <th>Type</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                            <th>Action</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="reports-table">
+
+                        <tr>
+
+                            <td colspan="7">
+
+                                No reports available.
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+            <!-- Moderation Actions -->
+
+            <section class="section">
+
+                <div class="dashboard-actions">
+
+                    <button
+                        type="button"
+                        class="btn btn-outline">
+
+                        Export Reports
+
+                    </button>
+
+                    <button
+                        type="button"
+                        class="btn btn-outline">
+
+                        Refresh
+
+                    </button>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-bottom">
+
+                © 2026 AdMarket. All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="../../assets/js/core/config.js"></script>
+<script src="../../assets/js/core/ui.js"></script>
+<script src="../../assets/js/core/modal.js"></script>
+<script src="../../assets/js/core/loader.js"></script>
+<script src="../../assets/js/core/toast.js"></script>
+<script src="../../assets/js/core/validator.js"></script>
+<script src="../../assets/js/core/theme.js"></script>
+<script src="../../assets/js/core/app.js"></script>
+</body>
+
+</html>

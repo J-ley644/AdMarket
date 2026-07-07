@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        Store Analytics | AdMarket
+
+    </title>
+
+    <meta
+        name="description"
+        content="View your store performance and analytics.">
+
+    <link rel="stylesheet" href="../../assets/css/variables.css">
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/utilities.css">
+    <link rel="stylesheet" href="../../assets/css/components.css">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+
+</head>
+
+<body>
+
+    <div id="loader" class="loader">
+
+        <div class="spinner"></div>
+
+    </div>
+
+    <header class="dashboard-header">
+
+        <div class="container">
+
+            <a
+                href="dashboard.html"
+                class="navbar-brand">
+
+                <img
+                    src="../../assets/images/logo.png"
+                    alt="AdMarket Logo">
+
+                <span>
+
+                    AdMarket Seller
+
+                </span>
+
+            </a>
+
+        </div>
+
+    </header>
+
+    <main class="dashboard">
+
+        <div class="container">
+
+            <section class="section-header">
+
+                <h1>
+
+                    Store Analytics
+
+                </h1>
+
+                <p>
+
+                    Monitor your store's sales, performance and customer growth.
+
+                </p>
+
+            </section>
+
+            <!-- Statistics -->
+
+            <section class="dashboard-stats">
+
+                <article class="stat-card">
+
+                    <h2>
+
+                        KES 0
+
+                    </h2>
+
+                    <p>
+
+                        Total Revenue
+
+                    </p>
+
+                </article>
+
+                <article class="stat-card">
+
+                    <h2>
+
+                        0
+
+                    </h2>
+
+                    <p>
+
+                        Products Sold
+
+                    </p>
+
+                </article>
+
+                <article class="stat-card">
+
+                    <h2>
+
+                        0
+
+                    </h2>
+
+                    <p>
+
+                        Total Orders
+
+                    </p>
+
+                </article>
+
+                <article class="stat-card">
+
+                    <h2>
+
+                        0
+
+                    </h2>
+
+                    <p>
+
+                        Returning Customers
+
+                    </p>
+
+                </article>
+
+            </section>
+
+            <!-- Sales Overview -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Sales Overview
+
+                    </h2>
+
+                </div>
+
+                <div class="dashboard-table">
+
+                    <table>
+
+                        <tbody>
+
+                            <tr>
+
+                                <th>Today's Sales</th>
+
+                                <td>KES 0</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <th>This Week</th>
+
+                                <td>KES 0</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <th>This Month</th>
+
+                                <td>KES 0</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <th>This Year</th>
+
+                                <td>KES 0</td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+            <!-- Top Products -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Top Selling Products
+
+                    </h2>
+
+                </div>
+
+                <div class="dashboard-table">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Product</th>
+                                <th>Units Sold</th>
+                                <th>Revenue</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="top-products">
+
+                            <tr>
+
+                                <td colspan="3">
+
+                                    No sales data available.
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+                        <!-- Customer Insights -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Customer Insights
+
+                    </h2>
+
+                </div>
+
+                <div class="dashboard-table">
+
+                    <table>
+
+                        <tbody>
+
+                            <tr>
+
+                                <th>New Customers</th>
+
+                                <td>0</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <th>Returning Customers</th>
+
+                                <td>0</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <th>Average Order Value</th>
+
+                                <td>KES 0</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <th>Conversion Rate</th>
+
+                                <td>0%</td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+            <!-- Recent Sales Activity -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Recent Sales Activity
+
+                    </h2>
+
+                </div>
+
+                <div class="activity-feed">
+
+                    <div class="activity-item">
+
+                        Recent sales activity will appear here.
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Actions -->
+
+            <section class="section">
+
+                <div class="dashboard-actions">
+
+                    <button
+                        type="button"
+                        class="btn btn-outline">
+
+                        Export Analytics
+
+                    </button>
+
+                    <button
+                        type="button"
+                        class="btn btn-outline">
+
+                        Refresh
+
+                    </button>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-bottom">
+
+                © 2026 AdMarket. All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="../../assets/js/core/config.js"></script>
+<script src="../../assets/js/core/ui.js"></script>
+<script src="../../assets/js/core/modal.js"></script>
+<script src="../../assets/js/core/loader.js"></script>
+<script src="../../assets/js/core/toast.js"></script>
+<script src="../../assets/js/core/validator.js"></script>
+<script src="../../assets/js/core/theme.js"></script>
+<script src="../../assets/js/core/app.js"></script>
+</body>
+
+</html>

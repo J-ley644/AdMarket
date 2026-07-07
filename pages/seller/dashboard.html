@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        Seller Dashboard | AdMarket
+
+    </title>
+
+    <meta
+        name="description"
+        content="Manage your store on AdMarket.">
+
+    <link rel="stylesheet" href="../../assets/css/variables.css">
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/utilities.css">
+    <link rel="stylesheet" href="../../assets/css/components.css">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+
+</head>
+
+<body>
+
+    <div id="loader" class="loader">
+
+        <div class="spinner"></div>
+
+    </div>
+
+    <header class="dashboard-header">
+
+        <div class="container">
+
+            <a
+                href="../../index.html"
+                class="navbar-brand">
+
+                <img
+                    src="../../assets/images/logo.png"
+                    alt="AdMarket Logo">
+
+                <span>
+
+                    AdMarket Seller
+
+                </span>
+
+            </a>
+
+            <div class="dashboard-actions">
+
+                <a
+                    href="../buyer/dashboard.html"
+                    class="btn btn-outline">
+
+                    Buyer Mode
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="dashboard">
+
+        <div class="container">
+
+            <section class="section-header">
+
+                <h1>
+
+                    Seller Dashboard
+
+                </h1>
+
+                <p>
+
+                    Welcome back. Manage your products, orders, customers and business from one place.
+
+                </p>
+
+            </section>
+
+            <!-- Statistics -->
+
+            <section class="dashboard-stats">
+
+                <article class="stat-card">
+
+                    <h2>
+
+                        0
+
+                    </h2>
+
+                    <p>
+
+                        Active Products
+
+                    </p>
+
+                </article>
+
+                <article class="stat-card">
+
+                    <h2>
+
+                        0
+
+                    </h2>
+
+                    <p>
+
+                        Orders
+
+                    </p>
+
+                </article>
+
+                <article class="stat-card">
+
+                    <h2>
+
+                        KES 0
+
+                    </h2>
+
+                    <p>
+
+                        Earnings
+
+                    </p>
+
+                </article>
+
+                <article class="stat-card">
+
+                    <h2>
+
+                        0
+
+                    </h2>
+
+                    <p>
+
+                        Customers
+
+                    </p>
+
+                </article>
+
+            </section>
+
+            <!-- Seller Shortcuts -->
+
+            <section class="quick-actions">
+
+                <a
+                    href="products.html"
+                    class="action-card">
+
+                    My Products
+
+                </a>
+
+                <a
+                    href="add-product.html"
+                    class="action-card">
+
+                    Add Product
+
+                </a>
+
+                <a
+                    href="orders.html"
+                    class="action-card">
+
+                    Orders
+
+                </a>
+
+                <a
+                    href="customers.html"
+                    class="action-card">
+
+                    Customers
+
+                </a>
+
+                <a
+                    href="earnings.html"
+                    class="action-card">
+
+                    Earnings
+
+                </a>
+
+                <a
+                    href="analytics.html"
+                    class="action-card">
+
+                    Analytics
+
+                </a>
+
+                <a
+                    href="profile.html"
+                    class="action-card">
+
+                    Store Profile
+
+                </a>
+
+                <a
+                    href="settings.html"
+                    class="action-card">
+
+                    Settings
+
+                </a>
+
+            </section>
+
+                        <!-- Recent Orders -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Recent Orders
+
+                    </h2>
+
+                    <a
+                        href="orders.html"
+                        class="btn btn-outline">
+
+                        View All
+
+                    </a>
+
+                </div>
+
+                <div class="dashboard-table">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Order ID</th>
+                                <th>Customer</th>
+                                <th>Total</th>
+                                <th>Status</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="recent-orders">
+
+                            <tr>
+
+                                <td colspan="4">
+
+                                    No recent orders.
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+            <!-- Low Stock Products -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Low Stock Products
+
+                    </h2>
+
+                </div>
+
+                <div class="dashboard-table">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Product</th>
+                                <th>Remaining Stock</th>
+                                <th>Action</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="low-stock-products">
+
+                            <tr>
+
+                                <td colspan="3">
+
+                                    No low-stock products.
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+            <!-- Recent Customer Activity -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Recent Customer Activity
+
+                    </h2>
+
+                </div>
+
+                <div class="activity-feed">
+
+                    <div class="activity-item">
+
+                        Customer activity will appear here.
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-bottom">
+
+                © 2026 AdMarket. All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="../../assets/js/core/config.js"></script>
+<script src="../../assets/js/core/ui.js"></script>
+<script src="../../assets/js/core/modal.js"></script>
+<script src="../../assets/js/core/loader.js"></script>
+<script src="../../assets/js/core/toast.js"></script>
+<script src="../../assets/js/core/validator.js"></script>
+<script src="../../assets/js/core/theme.js"></script>
+<script src="../../assets/js/core/app.js"></script>
+
+</body>
+
+</html>

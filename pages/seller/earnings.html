@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        Earnings | AdMarket
+
+    </title>
+
+    <meta
+        name="description"
+        content="View your store earnings and financial summary.">
+
+    <link rel="stylesheet" href="../../assets/css/variables.css">
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/utilities.css">
+    <link rel="stylesheet" href="../../assets/css/components.css">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+
+</head>
+
+<body>
+
+    <div id="loader" class="loader">
+
+        <div class="spinner"></div>
+
+    </div>
+
+    <header class="dashboard-header">
+
+        <div class="container">
+
+            <a
+                href="dashboard.html"
+                class="navbar-brand">
+
+                <img
+                    src="../../assets/images/logo.png"
+                    alt="AdMarket Logo">
+
+                <span>
+
+                    AdMarket Seller
+
+                </span>
+
+            </a>
+
+        </div>
+
+    </header>
+
+    <main class="dashboard">
+
+        <div class="container">
+
+            <section class="section-header">
+
+                <h1>
+
+                    Earnings
+
+                </h1>
+
+                <p>
+
+                    Track your store income, balances and payment history.
+
+                </p>
+
+            </section>
+
+            <!-- Earnings Overview -->
+
+            <section class="dashboard-stats">
+
+                <article class="stat-card">
+
+                    <h2>
+
+                        KES 0
+
+                    </h2>
+
+                    <p>
+
+                        Total Earnings
+
+                    </p>
+
+                </article>
+
+                <article class="stat-card">
+
+                    <h2>
+
+                        KES 0
+
+                    </h2>
+
+                    <p>
+
+                        Available Balance
+
+                    </p>
+
+                </article>
+
+                <article class="stat-card">
+
+                    <h2>
+
+                        KES 0
+
+                    </h2>
+
+                    <p>
+
+                        Pending Balance
+
+                    </p>
+
+                </article>
+
+                <article class="stat-card">
+
+                    <h2>
+
+                        KES 0
+
+                    </h2>
+
+                    <p>
+
+                        Paid Out
+
+                    </p>
+
+                </article>
+
+            </section>
+
+            <!-- Earnings Summary -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Earnings Summary
+
+                    </h2>
+
+                </div>
+
+                <div class="dashboard-table">
+
+                    <table>
+
+                        <tbody>
+
+                            <tr>
+
+                                <th>Today</th>
+
+                                <td>KES 0</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <th>This Week</th>
+
+                                <td>KES 0</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <th>This Month</th>
+
+                                <td>KES 0</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <th>This Year</th>
+
+                                <td>KES 0</td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+            <!-- Recent Transactions -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Recent Transactions
+
+                    </h2>
+
+                </div>
+
+                <div class="dashboard-table">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Date</th>
+                                <th>Description</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="earnings-transactions">
+
+                            <tr>
+
+                                <td colspan="4">
+
+                                    No transactions available.
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+                        <!-- Payment Accounts -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Payment Accounts
+
+                    </h2>
+
+                </div>
+
+                <div class="dashboard-table">
+
+                    <table>
+
+                        <tbody>
+
+                            <tr>
+
+                                <th>Primary Method</th>
+
+                                <td>Not Configured</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <th>M-Pesa</th>
+
+                                <td>Not Connected</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <th>Bank Account</th>
+
+                                <td>Not Connected</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <th>PayPal</th>
+
+                                <td>Not Connected</td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+            <!-- Recent Payout Activity -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Recent Payout Activity
+
+                    </h2>
+
+                </div>
+
+                <div class="activity-feed">
+
+                    <div class="activity-item">
+
+                        Your recent payout activity will appear here.
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Actions -->
+
+            <section class="section">
+
+                <div class="dashboard-actions">
+
+                    <a
+                        href="payouts.html"
+                        class="btn btn-primary">
+
+                        Request Payout
+
+                    </a>
+
+                    <button
+                        type="button"
+                        class="btn btn-outline">
+
+                        Export Statement
+
+                    </button>
+
+                    <button
+                        type="button"
+                        class="btn btn-outline">
+
+                        Refresh
+
+                    </button>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-bottom">
+
+                © 2026 AdMarket. All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="../../assets/js/core/config.js"></script>
+<script src="../../assets/js/core/ui.js"></script>
+<script src="../../assets/js/core/modal.js"></script>
+<script src="../../assets/js/core/loader.js"></script>
+<script src="../../assets/js/core/toast.js"></script>
+<script src="../../assets/js/core/validator.js"></script>
+<script src="../../assets/js/core/theme.js"></script>
+<script src="../../assets/js/core/app.js"></script>
+
+</body>
+
+</html>

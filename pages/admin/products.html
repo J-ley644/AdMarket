@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        Product Management | AdMarket Admin
+
+    </title>
+
+    <meta
+        name="description"
+        content="Manage marketplace products on AdMarket.">
+
+    <link rel="stylesheet" href="../../assets/css/variables.css">
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/utilities.css">
+    <link rel="stylesheet" href="../../assets/css/components.css">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+
+</head>
+
+<body>
+
+    <div id="loader" class="loader">
+
+        <div class="spinner"></div>
+
+    </div>
+
+    <header class="dashboard-header">
+
+        <div class="container">
+
+            <a
+                href="dashboard.html"
+                class="navbar-brand">
+
+                <img
+                    src="../../assets/images/logo.png"
+                    alt="AdMarket Logo">
+
+                <span>
+
+                    AdMarket Admin
+
+                </span>
+
+            </a>
+
+        </div>
+
+    </header>
+
+    <main class="dashboard">
+
+        <div class="container">
+
+            <section class="section-header">
+
+                <h1>
+
+                    Product Management
+
+                </h1>
+
+                <p>
+
+                    Review, manage and moderate products listed across the marketplace.
+
+                </p>
+
+            </section>
+
+            <!-- Search & Filters -->
+
+            <section class="product-filters">
+
+                <input
+                    id="product-search"
+                    class="form-control"
+                    type="search"
+                    placeholder="Search by product name, seller or product ID">
+
+                <select
+                    id="product-category"
+                    class="form-control">
+
+                    <option value="">
+
+                        All Categories
+
+                    </option>
+
+                    <option>Electronics</option>
+                    <option>Fashion</option>
+                    <option>Beauty</option>
+                    <option>Home & Living</option>
+                    <option>Sports</option>
+                    <option>Books</option>
+                    <option>Health</option>
+                    <option>Automotive</option>
+
+                </select>
+
+                <select
+                    id="product-status"
+                    class="form-control">
+
+                    <option value="">
+
+                        All Statuses
+
+                    </option>
+
+                    <option>Active</option>
+                    <option>Pending Review</option>
+                    <option>Hidden</option>
+                    <option>Removed</option>
+
+                </select>
+
+            </section>
+
+            <!-- Products Table -->
+
+            <section class="dashboard-table">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Product ID</th>
+
+                            <th>Product</th>
+
+                            <th>Seller</th>
+
+                            <th>Category</th>
+
+                            <th>Status</th>
+
+                            <th>Listed</th>
+
+                            <th>Action</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="admin-products-table">
+
+                        <tr>
+
+                            <td colspan="7">
+
+                                No products available.
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+            <!-- Admin Actions -->
+
+            <section class="section">
+
+                <div class="dashboard-actions">
+
+                    <button
+                        class="btn btn-outline"
+                        type="button">
+
+                        Export Products
+
+                    </button>
+
+                    <button
+                        class="btn btn-outline"
+                        type="button">
+
+                        Refresh
+
+                    </button>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-bottom">
+
+                © 2026 AdMarket. All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="../../assets/js/core/config.js"></script>
+<script src="../../assets/js/core/ui.js"></script>
+<script src="../../assets/js/core/modal.js"></script>
+<script src="../../assets/js/core/loader.js"></script>
+<script src="../../assets/js/core/toast.js"></script>
+<script src="../../assets/js/core/validator.js"></script>
+<script src="../../assets/js/core/theme.js"></script>
+<script src="../../assets/js/core/app.js"></script>
+</body>
+
+</html>

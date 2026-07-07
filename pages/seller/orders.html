@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        Seller Orders | AdMarket
+
+    </title>
+
+    <meta
+        name="description"
+        content="Manage customer orders on AdMarket.">
+
+    <link rel="stylesheet" href="../../assets/css/variables.css">
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/utilities.css">
+    <link rel="stylesheet" href="../../assets/css/components.css">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+
+</head>
+
+<body>
+
+    <div id="loader" class="loader">
+
+        <div class="spinner"></div>
+
+    </div>
+
+    <header class="dashboard-header">
+
+        <div class="container">
+
+            <a
+                href="dashboard.html"
+                class="navbar-brand">
+
+                <img
+                    src="../../assets/images/logo.png"
+                    alt="AdMarket Logo">
+
+                <span>
+
+                    AdMarket Seller
+
+                </span>
+
+            </a>
+
+        </div>
+
+    </header>
+
+    <main class="dashboard">
+
+        <div class="container">
+
+            <section class="section-header">
+
+                <h1>
+
+                    Orders
+
+                </h1>
+
+                <p>
+
+                    Track, manage and fulfill customer orders.
+
+                </p>
+
+            </section>
+
+            <!-- Filters -->
+
+            <section class="product-filters">
+
+                <input
+                    id="order-search"
+                    class="form-control"
+                    type="search"
+                    placeholder="Search by order ID or customer">
+
+                <select
+                    id="order-status"
+                    class="form-control">
+
+                    <option value="">
+
+                        All Statuses
+
+                    </option>
+
+                    <option>
+
+                        Pending
+
+                    </option>
+
+                    <option>
+
+                        Confirmed
+
+                    </option>
+
+                    <option>
+
+                        Processing
+
+                    </option>
+
+                    <option>
+
+                        Shipped
+
+                    </option>
+
+                    <option>
+
+                        Delivered
+
+                    </option>
+
+                    <option>
+
+                        Cancelled
+
+                    </option>
+
+                </select>
+
+            </section>
+
+            <!-- Orders Table -->
+
+            <section class="dashboard-table">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Order ID</th>
+                            <th>Customer</th>
+                            <th>Items</th>
+                            <th>Total</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                            <th>Action</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="seller-orders-table">
+
+                        <tr>
+
+                            <td colspan="7">
+
+                                No orders available.
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+            <!-- Order Summary -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Order Summary
+
+                    </h2>
+
+                </div>
+
+                <div class="dashboard-stats">
+
+                    <article class="stat-card">
+
+                        <h3>
+
+                            0
+
+                        </h3>
+
+                        <p>
+
+                            Pending
+
+                        </p>
+
+                    </article>
+
+                    <article class="stat-card">
+
+                        <h3>
+
+                            0
+
+                        </h3>
+
+                        <p>
+
+                            Processing
+
+                        </p>
+
+                    </article>
+
+                    <article class="stat-card">
+
+                        <h3>
+
+                            0
+
+                        </h3>
+
+                        <p>
+
+                            Shipped
+
+                        </p>
+
+                    </article>
+
+                    <article class="stat-card">
+
+                        <h3>
+
+                            0
+
+                        </h3>
+
+                        <p>
+
+                            Delivered
+
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+                        <!-- Recent Order Activity -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Recent Order Activity
+
+                    </h2>
+
+                </div>
+
+                <div class="activity-feed">
+
+                    <div class="activity-item">
+
+                        Recent order updates will appear here.
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Bulk Actions -->
+
+            <section class="section">
+
+                <div class="dashboard-actions">
+
+                    <button
+                        type="button"
+                        class="btn btn-outline">
+
+                        Export Orders
+
+                    </button>
+
+                    <button
+                        type="button"
+                        class="btn btn-outline">
+
+                        Refresh
+
+                    </button>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-bottom">
+
+                © 2026 AdMarket. All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="../../assets/js/core/config.js"></script>
+<script src="../../assets/js/core/ui.js"></script>
+<script src="../../assets/js/core/modal.js"></script>
+<script src="../../assets/js/core/loader.js"></script>
+<script src="../../assets/js/core/toast.js"></script>
+<script src="../../assets/js/core/validator.js"></script>
+<script src="../../assets/js/core/theme.js"></script>
+<script src="../../assets/js/core/app.js"></script>
+</body>
+
+</html>

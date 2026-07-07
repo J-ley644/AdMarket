@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        Buyer Dashboard | AdMarket
+
+    </title>
+
+    <meta
+        name="description"
+        content="AdMarket Buyer Dashboard">
+
+    <link rel="stylesheet" href="../../assets/css/variables.css">
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/utilities.css">
+    <link rel="stylesheet" href="../../assets/css/components.css">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+
+</head>
+
+<body>
+
+    <!-- Loader -->
+
+    <div id="loader" class="loader">
+
+        <div class="spinner"></div>
+
+    </div>
+
+    <!-- Header -->
+
+    <header class="dashboard-header">
+
+        <div class="container">
+
+            <a
+                href="../../index.html"
+                class="navbar-brand">
+
+                <img
+                    src="../../assets/images/logo.png"
+                    alt="AdMarket Logo">
+
+                <span>
+
+                    AdMarket
+
+                </span>
+
+            </a>
+
+            <div class="dashboard-actions">
+
+                <button
+                    class="btn btn-outline"
+                    id="notifications-btn">
+
+                    Notifications
+
+                </button>
+
+                <button
+                    class="btn btn-primary"
+                    id="profile-btn">
+
+                    Profile
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Dashboard -->
+
+    <main class="dashboard">
+
+        <div class="container">
+
+            <section class="dashboard-hero">
+
+                <div>
+
+                    <h1>
+
+                        Welcome Back!
+
+                    </h1>
+
+                    <p>
+
+                        Discover products, manage your orders,
+                        and grow with AdMarket.
+
+                    </p>
+
+                </div>
+
+                <button
+                    class="btn btn-primary"
+                    id="become-seller-btn">
+
+                    Become a Seller
+
+                </button>
+
+            </section>
+
+            <!-- Search -->
+
+            <section class="dashboard-search">
+
+                <input
+                    id="dashboard-search"
+                    class="form-control"
+                    type="search"
+                    placeholder="Search products...">
+
+            </section>
+
+            <!-- Quick Actions -->
+
+            <section class="quick-actions">
+
+                <button class="action-card">
+
+                    Browse Products
+
+                </button>
+
+                <button class="action-card">
+
+                    My Orders
+
+                </button>
+
+                <button class="action-card">
+
+                    Wishlist
+
+                </button>
+
+                <button class="action-card">
+
+                    Messages
+
+                </button>
+
+            </section>
+
+            <!-- Statistics -->
+
+            <section class="dashboard-stats">
+
+                <article class="stat-card">
+
+                    <h2>
+
+                        0
+
+                    </h2>
+
+                    <p>
+
+                        Orders
+
+                    </p>
+
+                </article>
+
+                <article class="stat-card">
+
+                    <h2>
+
+                        0
+
+                    </h2>
+
+                    <p>
+
+                        Wishlist
+
+                    </p>
+
+                </article>
+
+                <article class="stat-card">
+
+                    <h2>
+
+                        0
+
+                    </h2>
+
+                    <p>
+
+                        Messages
+
+                    </p>
+
+                </article>
+
+                <article class="stat-card">
+
+                    <h2>
+
+                        0
+
+                    </h2>
+
+                    <p>
+
+                        Notifications
+
+                    </p>
+
+                </article>
+
+            </section>
+
+                        <!-- Recommended Products -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Recommended For You
+
+                    </h2>
+
+                    <p>
+
+                        Products selected based on your interests.
+
+                    </p>
+
+                </div>
+
+                <div
+                    id="recommended-products-grid"
+                    class="products-grid">
+
+                </div>
+
+            </section>
+
+            <!-- Recent Orders -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Recent Orders
+
+                    </h2>
+
+                    <p>
+
+                        Track your latest purchases.
+
+                    </p>
+
+                </div>
+
+                <div class="dashboard-table">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Order ID</th>
+
+                                <th>Product</th>
+
+                                <th>Status</th>
+
+                                <th>Total</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="recent-orders">
+
+                            <tr>
+
+                                <td colspan="4">
+
+                                    No recent orders.
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+            <!-- Recent Activity -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Recent Activity
+
+                    </h2>
+
+                </div>
+
+                <div
+                    id="activity-feed"
+                    class="activity-feed">
+
+                    <div class="activity-item">
+
+                        Welcome to AdMarket.
+
+                        Your activity will appear here.
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-bottom">
+
+                © 2026 AdMarket.
+
+                All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="../../assets/js/core/config.js"></script>
+<script src="../../assets/js/core/ui.js"></script>
+<script src="../../assets/js/core/modal.js"></script>
+<script src="../../assets/js/core/loader.js"></script>
+<script src="../../assets/js/core/toast.js"></script>
+<script src="../../assets/js/core/validator.js"></script>
+<script src="../../assets/js/core/theme.js"></script>
+<script src="../../assets/js/core/app.js"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        Product Details | AdMarket
+
+    </title>
+
+    <meta
+        name="description"
+        content="View product details on AdMarket.">
+
+    <link rel="stylesheet" href="../../assets/css/variables.css">
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/utilities.css">
+    <link rel="stylesheet" href="../../assets/css/components.css">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+
+</head>
+
+<body>
+
+    <!-- Loader -->
+
+    <div id="loader" class="loader">
+
+        <div class="spinner"></div>
+
+    </div>
+
+    <!-- Header -->
+
+    <header class="dashboard-header">
+
+        <div class="container">
+
+            <a
+                href="../../index.html"
+                class="navbar-brand">
+
+                <img
+                    src="../../assets/images/logo.png"
+                    alt="AdMarket Logo">
+
+                <span>
+
+                    AdMarket
+
+                </span>
+
+            </a>
+
+            <div class="dashboard-actions">
+
+                <a
+                    href="products.html"
+                    class="btn btn-outline">
+
+                    Back
+
+                </a>
+
+                <button
+                    class="btn btn-primary">
+
+                    Profile
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="dashboard">
+
+        <div class="container">
+
+            <section class="product-details">
+
+                <div class="product-gallery">
+
+                    <img
+                        id="main-product-image"
+                        src="../../assets/images/products/placeholder.jpg"
+                        alt="Product">
+
+                    <div
+                        class="product-thumbnails">
+
+                        <img
+                            src="../../assets/images/products/placeholder.jpg"
+                            alt="Thumbnail">
+
+                        <img
+                            src="../../assets/images/products/placeholder.jpg"
+                            alt="Thumbnail">
+
+                        <img
+                            src="../../assets/images/products/placeholder.jpg"
+                            alt="Thumbnail">
+
+                    </div>
+
+                </div>
+
+                <div class="product-information">
+
+                    <span
+                        class="product-category">
+
+                        Electronics
+
+                    </span>
+
+                    <h1 id="product-name">
+
+                        Product Name
+
+                    </h1>
+
+                    <div class="product-rating">
+
+                        ⭐ 4.8 (125 Reviews)
+
+                    </div>
+
+                    <div
+                        class="product-price">
+
+                        KES 0
+
+                    </div>
+
+                    <p
+                        class="product-description">
+
+                        Product description will appear here.
+
+                    </p>
+
+                    <div
+                        class="product-stock">
+
+                        <strong>
+
+                            Availability:
+
+                        </strong>
+
+                        In Stock
+
+                    </div>
+
+                    <div
+                        class="product-actions">
+
+                        <button
+                            class="btn btn-primary">
+
+                            Add to Cart
+
+                        </button>
+
+                        <button
+                            class="btn btn-outline">
+
+                            Buy Now
+
+                        </button>
+
+                        <button
+                            class="btn btn-outline">
+
+                            ♥ Wishlist
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+                        <!-- Seller Information -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Seller
+
+                    </h2>
+
+                </div>
+
+                <div class="seller-card">
+
+                    <div>
+
+                        <h3>
+
+                            Demo Store
+
+                        </h3>
+
+                        <p>
+
+                            Trusted seller on AdMarket.
+
+                        </p>
+
+                    </div>
+
+                    <button
+                        class="btn btn-outline">
+
+                        View Store
+
+                    </button>
+
+                </div>
+
+            </section>
+
+            <!-- Product Specifications -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Specifications
+
+                    </h2>
+
+                </div>
+
+                <div class="specifications">
+
+                    <div class="spec-row">
+
+                        <span>Brand</span>
+
+                        <strong>Sample Brand</strong>
+
+                    </div>
+
+                    <div class="spec-row">
+
+                        <span>Condition</span>
+
+                        <strong>New</strong>
+
+                    </div>
+
+                    <div class="spec-row">
+
+                        <span>Warranty</span>
+
+                        <strong>12 Months</strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Customer Reviews -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Customer Reviews
+
+                    </h2>
+
+                </div>
+
+                <div id="reviews-list">
+
+                    <article class="testimonial-card">
+
+                        <p class="testimonial-text">
+
+                            Great quality product. Fast delivery and excellent service.
+
+                        </p>
+
+                        <div class="testimonial-user">
+
+                            <div class="testimonial-avatar">
+
+                                <img
+                                    src="../../assets/images/users/user-1.jpg"
+                                    alt="Customer">
+
+                            </div>
+
+                            <div>
+
+                                <div class="testimonial-name">
+
+                                    Brian Mwangi
+
+                                </div>
+
+                                <div class="testimonial-role">
+
+                                    Verified Buyer
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+            <!-- Related Products -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Related Products
+
+                    </h2>
+
+                </div>
+
+                <div
+                    id="related-products-grid"
+                    class="products-grid">
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-bottom">
+
+                © 2026 AdMarket. All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="../../assets/js/core/config.js"></script>
+<script src="../../assets/js/core/ui.js"></script>
+<script src="../../assets/js/core/modal.js"></script>
+<script src="../../assets/js/core/loader.js"></script>
+<script src="../../assets/js/core/toast.js"></script>
+<script src="../../assets/js/core/validator.js"></script>
+<script src="../../assets/js/core/theme.js"></script>
+<script src="../../assets/js/core/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        Order Details | AdMarket
+
+    </title>
+
+    <meta
+        name="description"
+        content="View and manage a customer order.">
+
+    <link rel="stylesheet" href="../../assets/css/variables.css">
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/utilities.css">
+    <link rel="stylesheet" href="../../assets/css/components.css">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+
+</head>
+
+<body>
+
+    <div id="loader" class="loader">
+
+        <div class="spinner"></div>
+
+    </div>
+
+    <header class="dashboard-header">
+
+        <div class="container">
+
+            <a
+                href="orders.html"
+                class="navbar-brand">
+
+                <img
+                    src="../../assets/images/logo.png"
+                    alt="AdMarket Logo">
+
+                <span>
+
+                    AdMarket Seller
+
+                </span>
+
+            </a>
+
+        </div>
+
+    </header>
+
+    <main class="dashboard">
+
+        <div class="container">
+
+            <section class="section-header">
+
+                <h1>
+
+                    Order Details
+
+                </h1>
+
+                <p>
+
+                    Review and manage this customer order.
+
+                </p>
+
+            </section>
+
+            <!-- Order Information -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Order Information
+
+                    </h2>
+
+                </div>
+
+                <div class="dashboard-table">
+
+                    <table>
+
+                        <tbody>
+
+                            <tr>
+
+                                <th>Order ID</th>
+
+                                <td>#000000</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <th>Order Date</th>
+
+                                <td>--</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <th>Status</th>
+
+                                <td>Pending</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <th>Payment Status</th>
+
+                                <td>Paid</td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+            <!-- Customer Information -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Customer Information
+
+                    </h2>
+
+                </div>
+
+                <div class="dashboard-table">
+
+                    <table>
+
+                        <tbody>
+
+                            <tr>
+
+                                <th>Name</th>
+
+                                <td>--</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <th>Email</th>
+
+                                <td>--</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <th>Phone</th>
+
+                                <td>--</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <th>Delivery Address</th>
+
+                                <td>--</td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+            <!-- Ordered Products -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Ordered Products
+
+                    </h2>
+
+                </div>
+
+                <div class="dashboard-table">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Product</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                                <th>Total</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="ordered-products">
+
+                            <tr>
+
+                                <td colspan="4">
+
+                                    No products found.
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+                        <!-- Shipping Information -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Shipping Information
+
+                    </h2>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="shipping-provider">
+
+                        Shipping Provider
+
+                    </label>
+
+                    <input
+                        id="shipping-provider"
+                        class="form-control"
+                        type="text"
+                        placeholder="Courier or delivery company">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="tracking-number">
+
+                        Tracking Number
+
+                    </label>
+
+                    <input
+                        id="tracking-number"
+                        class="form-control"
+                        type="text"
+                        placeholder="Enter tracking number">
+
+                </div>
+
+            </section>
+
+            <!-- Update Order -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Update Order
+
+                    </h2>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="order-status">
+
+                        Order Status
+
+                    </label>
+
+                    <select
+                        id="order-status"
+                        class="form-control">
+
+                        <option>Pending</option>
+                        <option>Confirmed</option>
+                        <option>Processing</option>
+                        <option>Shipped</option>
+                        <option>Delivered</option>
+                        <option>Cancelled</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="seller-notes">
+
+                        Seller Notes
+
+                    </label>
+
+                    <textarea
+                        id="seller-notes"
+                        class="form-control"
+                        rows="5"
+                        placeholder="Internal notes about this order"></textarea>
+
+                </div>
+
+            </section>
+
+            <!-- Order Summary -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Order Summary
+
+                    </h2>
+
+                </div>
+
+                <div class="dashboard-table">
+
+                    <table>
+
+                        <tbody>
+
+                            <tr>
+
+                                <th>Subtotal</th>
+
+                                <td>KES 0</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <th>Shipping Fee</th>
+
+                                <td>KES 0</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <th>Total</th>
+
+                                <td><strong>KES 0</strong></td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+            <!-- Actions -->
+
+            <section class="section">
+
+                <div class="dashboard-actions">
+
+                    <a
+                        href="orders.html"
+                        class="btn btn-outline">
+
+                        Back to Orders
+
+                    </a>
+
+                    <button
+                        type="button"
+                        class="btn btn-outline">
+
+                        Print Order
+
+                    </button>
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary">
+
+                        Save Changes
+
+                    </button>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-bottom">
+
+                © 2026 AdMarket. All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="../../assets/js/core/config.js"></script>
+<script src="../../assets/js/core/ui.js"></script>
+<script src="../../assets/js/core/modal.js"></script>
+<script src="../../assets/js/core/loader.js"></script>
+<script src="../../assets/js/core/toast.js"></script>
+<script src="../../assets/js/core/validator.js"></script>
+<script src="../../assets/js/core/theme.js"></script>
+<script src="../../assets/js/core/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        Seller Settings | AdMarket
+
+    </title>
+
+    <meta
+        name="description"
+        content="Manage your seller account settings.">
+
+    <link rel="stylesheet" href="../../assets/css/variables.css">
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/utilities.css">
+    <link rel="stylesheet" href="../../assets/css/components.css">
+    <link rel="stylesheet" href="../../assets/css/app.css">
+
+</head>
+
+<body>
+
+    <div id="loader" class="loader">
+
+        <div class="spinner"></div>
+
+    </div>
+
+    <header class="dashboard-header">
+
+        <div class="container">
+
+            <a
+                href="dashboard.html"
+                class="navbar-brand">
+
+                <img
+                    src="../../assets/images/logo.png"
+                    alt="AdMarket Logo">
+
+                <span>
+
+                    AdMarket Seller
+
+                </span>
+
+            </a>
+
+        </div>
+
+    </header>
+
+    <main class="dashboard">
+
+        <div class="container">
+
+            <section class="section-header">
+
+                <h1>
+
+                    Seller Settings
+
+                </h1>
+
+                <p>
+
+                    Manage your account preferences, notifications and security.
+
+                </p>
+
+            </section>
+
+            <!-- Notification Settings -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Notifications
+
+                    </h2>
+
+                </div>
+
+                <label class="checkbox">
+
+                    <input
+                        type="checkbox"
+                        checked>
+
+                    <span>
+
+                        Email notifications
+
+                    </span>
+
+                </label>
+
+                <label class="checkbox">
+
+                    <input
+                        type="checkbox"
+                        checked>
+
+                    <span>
+
+                        SMS notifications
+
+                    </span>
+
+                </label>
+
+                <label class="checkbox">
+
+                    <input
+                        type="checkbox">
+
+                    <span>
+
+                        Promotional notifications
+
+                    </span>
+
+                </label>
+
+            </section>
+
+            <!-- Security -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Security
+
+                    </h2>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="current-password">
+
+                        Current Password
+
+                    </label>
+
+                    <input
+                        id="current-password"
+                        class="form-control"
+                        type="password">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="new-password">
+
+                        New Password
+
+                    </label>
+
+                    <input
+                        id="new-password"
+                        class="form-control"
+                        type="password">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="confirm-password">
+
+                        Confirm New Password
+
+                    </label>
+
+                    <input
+                        id="confirm-password"
+                        class="form-control"
+                        type="password">
+
+                </div>
+
+            </section>
+
+            <!-- Store Preferences -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>
+
+                        Store Preferences
+
+                    </h2>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="store-language">
+
+                        Language
+
+                    </label>
+
+                    <select
+                        id="store-language"
+                        class="form-control">
+
+                        <option>
+
+                            English
+
+                        </option>
+
+                        <option>
+
+                            Kiswahili
+
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="store-currency">
+
+                        Currency
+
+                    </label>
+
+                    <select
+                        id="store-currency"
+                        class="form-control">
+
+                        <option>
+
+                            Kenyan Shilling (KES)
+
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </section>
+
+                            <!-- Privacy Settings -->
+
+                <section class="section">
+
+                    <div class="section-header">
+
+                        <h2>
+
+                            Privacy Settings
+
+                        </h2>
+
+                    </div>
+
+                    <label class="checkbox">
+
+                        <input
+                            type="checkbox"
+                            checked>
+
+                        <span>
+
+                            Display my store publicly on AdMarket
+
+                        </span>
+
+                    </label>
+
+                    <label class="checkbox">
+
+                        <input
+                            type="checkbox"
+                            checked>
+
+                        <span>
+
+                            Allow customers to contact me through AdMarket Chat
+
+                        </span>
+
+                    </label>
+
+                </section>
+
+                <!-- Payment Methods -->
+
+                <section class="section">
+
+                    <div class="section-header">
+
+                        <h2>
+
+                            Connected Payment Methods
+
+                        </h2>
+
+                    </div>
+
+                    <div class="dashboard-table">
+
+                        <table>
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Method</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>M-Pesa</td>
+
+                                    <td>Not Connected</td>
+
+                                    <td>
+
+                                        <button
+                                            type="button"
+                                            class="btn btn-outline">
+
+                                            Connect
+
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>Bank Account</td>
+
+                                    <td>Not Connected</td>
+
+                                    <td>
+
+                                        <button
+                                            type="button"
+                                            class="btn btn-outline">
+
+                                            Connect
+
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>PayPal</td>
+
+                                    <td>Not Connected</td>
+
+                                    <td>
+
+                                        <button
+                                            type="button"
+                                            class="btn btn-outline">
+
+                                            Connect
+
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
+
+                <!-- Danger Zone -->
+
+                <section class="section">
+
+                    <div class="section-header">
+
+                        <h2>
+
+                            Danger Zone
+
+                        </h2>
+
+                    </div>
+
+                    <p>
+
+                        These actions affect your seller account and should be used carefully.
+
+                    </p>
+
+                    <div class="dashboard-actions">
+
+                        <button
+                            type="button"
+                            class="btn btn-outline">
+
+                            Deactivate Seller Account
+
+                        </button>
+
+                    </div>
+
+                </section>
+
+                <!-- Actions -->
+
+                <section class="section">
+
+                    <div class="dashboard-actions">
+
+                        <a
+                            href="dashboard.html"
+                            class="btn btn-outline">
+
+                            Cancel
+
+                        </a>
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary">
+
+                            Save Settings
+
+                        </button>
+
+                    </div>
+
+                </section>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-bottom">
+
+                © 2026 AdMarket. All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="../../assets/js/core/config.js"></script>
+<script src="../../assets/js/core/ui.js"></script>
+<script src="../../assets/js/core/modal.js"></script>
+<script src="../../assets/js/core/loader.js"></script>
+<script src="../../assets/js/core/toast.js"></script>
+<script src="../../assets/js/core/validator.js"></script>
+<script src="../../assets/js/core/theme.js"></script>
+<script src="../../assets/js/core/app.js"></script>
+
+</body>
+
+</html>
