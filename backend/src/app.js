@@ -1,16 +1,13 @@
 const express = require("express");
 
+const routes = require("./routes");
+
 const app = express();
 
-// Middleware
+// Built-in Middleware
 app.use(express.json());
 
-// Default Route
-app.get("/", (req, res) => {
-    res.status(200).json({
-        success: true,
-        message: "Welcome to the AdMarket API 🚀"
-    });
-});
+// API Routes
+app.use("/api/v1", routes);
 
 module.exports = app;
