@@ -9,18 +9,56 @@
    GLOBAL
 ==========================================================*/
 
-body{
+/* ==========================
+   AdMarket Premium Background
+========================== */
 
-     background: 
-    linear-gradient(
-        135deg,
-        #c8c8db 0%,
-        #fcfcfc 100%
+body {
+    font-family: "Inter", sans-serif;
+    background: linear-gradient(
+        180deg,
+        #08172b 0%,
+        #0a1527 45%,
+        #0e192e 100%
     );
-    
-
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
 }
 
+/* Blue Glow */
+
+body::before{
+    content:"";
+    position:fixed;
+    width:450px;
+    height:450px;
+    border-radius:50%;
+    background:rgba(37,99,235,.16);
+    filter:blur(120px);
+
+    top:-180px;
+    left:-120px;
+
+    z-index:-1;
+}
+
+/* Purple Glow */
+
+body::after{
+    content:"";
+    position:fixed;
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    background:rgba(168,85,247,.14);
+    filter:blur(140px);
+
+    bottom:-220px;
+    right:-150px;
+
+    z-index:-1;
+}
 
 /* ==========================================================
    AUTH PAGE
@@ -2022,6 +2060,10 @@ body{
 
 .dashboard-hero{
 
+    position:relative;
+
+    overflow:hidden;
+
     display:flex;
 
     justify-content:space-between;
@@ -2030,37 +2072,98 @@ body{
 
     gap:2rem;
 
-    padding:2rem;
+    padding:3rem;
 
-    border-radius:24px;
+    border-radius:28px;
 
-    background:linear-gradient(
-        135deg,
-        #2563eb,
-        #3b82f6
-    );
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb 0%,
+            #3b82f6 45%,
+            #6366f1 100%
+        );
 
     color:#fff;
 
     margin-bottom:2.5rem;
+
+    box-shadow:
+        0 25px 60px rgba(37,99,235,.28);
+
+}
+
+.dashboard-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:340px;
+
+    height:340px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.12);
+
+    top:-160px;
+
+    right:-80px;
+
+    filter:blur(8px);
+
+}
+
+.dashboard-hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:220px;
+
+    height:220px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    bottom:-120px;
+
+    left:-60px;
+
+}
+
+.dashboard-hero>*{
+
+    position:relative;
+
+    z-index:2;
 
 }
 
 
 .dashboard-hero h1{
 
-    margin-bottom:.75rem;
+    font-size:2.8rem;
 
-    font-size:2.25rem;
+    font-weight:800;
+
+    line-height:1.15;
+
+    margin-bottom:1rem;
 
 }
 
 
 .dashboard-hero p{
 
-    opacity:.95;
+    font-size:1.05rem;
 
-    line-height:1.7;
+    line-height:1.8;
+
+    opacity:.95;
 
     max-width:650px;
 
@@ -2090,24 +2193,35 @@ body{
 
 .action-card{
 
-    padding:1.5rem;
+    padding:1.6rem;
 
-    border:none;
+    border-radius:20px;
 
-    border-radius:18px;
+    background:rgba(255,255,255,.78);
 
-    background:var(--surface);
+    backdrop-filter:blur(18px);
 
-    border:1px solid var(--border);
+    border:1px solid rgba(255,255,255,.65);
 
     font-weight:600;
 
     cursor:pointer;
 
     transition:
-        transform .3s,
-        border-color .3s,
-        box-shadow .3s;
+        transform .35s,
+        box-shadow .35s,
+        border-color .35s;
+
+}
+
+.action-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#2563eb;
+
+    box-shadow:
+        0 20px 40px rgba(37,99,235,.18);
 
 }
 
@@ -2141,13 +2255,32 @@ body{
 
     padding:2rem;
 
-    background:var(--surface);
+    background:rgba(255,255,255,.78);
 
-    border:1px solid var(--border);
+    backdrop-filter:blur(18px);
 
-    border-radius:20px;
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.65);
+
+    border-radius:22px;
 
     text-align:center;
+
+    box-shadow:
+        0 12px 35px rgba(15,23,42,.08);
+
+    transition:
+        transform .35s,
+        box-shadow .35s;
+}
+
+.dashboard-stats .stat-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+        0 24px 45px rgba(37,99,235,.18);
 
 }
 
@@ -2167,11 +2300,16 @@ body{
 
     overflow-x:auto;
 
-    border:1px solid var(--border);
+    background:rgba(255,255,255,.78);
 
-    border-radius:20px;
+    backdrop-filter:blur(18px);
 
-    background:var(--surface);
+    border-radius:24px;
+
+    border:1px solid rgba(255,255,255,.6);
+
+    box-shadow:
+        0 15px 35px rgba(15,23,42,.08);
 
 }
 
@@ -2220,13 +2358,18 @@ body{
 
 .activity-item{
 
-    padding:1rem 1.25rem;
+    padding:1.25rem;
 
-    border-radius:16px;
+    border-radius:18px;
 
-    background:var(--surface);
+    background:rgba(255,255,255,.75);
 
-    border:1px solid var(--border);
+    backdrop-filter:blur(14px);
+
+    border:1px solid rgba(255,255,255,.65);
+
+    box-shadow:
+        0 10px 25px rgba(15,23,42,.06);
 
 }
 
