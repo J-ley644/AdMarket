@@ -3,7 +3,9 @@ const express = require("express");
 const {
     register,
     login,
+    getMe,
 } = require("../controllers/auth.controller");
+const protect = require("../middleware/auth.middleware");
 const validate = require("../middleware/validation.middleware");
 const {
     registerValidator,
@@ -24,6 +26,23 @@ router.post(
     loginValidator,
     validate,
     login
+
 );
 
+router.get("/me", protect, getMe);
+
 module.exports = router;
+
+const authorize = require("../middleware/role.middleware");
+
+router.get(
+    "/admin-test",
+    protect,
+    authorize("ADMIN"),
+    (req, res) => {
+        res.json({
+            success: true,
+            message: "Welcome Admin!",
+        });
+    }
+);

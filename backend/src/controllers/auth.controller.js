@@ -1,3 +1,4 @@
+
 const {
     registerUser,
     loginUser,
@@ -51,7 +52,43 @@ const login = async (req, res, next) => {
     }
 };
 
+const prisma = require("../config/prisma");
+
+const getMe = async (req, res, next) => {
+    try {
+        const user = await prisma.user.findUnique({
+            where: {
+                id: req.user.id,
+            },
+            select: {
+                id: true,
+                firstName: true,
+                lastName: true,
+                email: true,
+                role: true,
+                createdAt: true,
+            },
+        });
+
+        if (!user) {
+            return res.status(404).json({
+                success: false,
+                message: "User not found.",
+            });
+        }
+
+        res.status(200).json({
+            success: true,
+            user,
+        });
+
+    } catch (error) {
+        next(error);
+    }
+};
+
 module.exports = {
     register,
     login,
+    getMe,
 };
