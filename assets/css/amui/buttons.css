@@ -333,3 +333,60 @@
     }
 
 }
+
+/* ==========================================================
+   Compatibility Layer
+   Allows .btn classes to use AMUI styles
+========================================================== */
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:.5rem;
+    border:none;
+    cursor:pointer;
+    text-decoration:none;
+    font-family:var(--am-font);
+    font-weight:600;
+    font-size:1rem;
+    padding:.75rem 1.25rem;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.btn-primary{
+
+    background:var(--am-primary);
+
+    color:#ffffff;
+
+}
+
+.btn-primary:hover{
+
+    background:var(--am-primary-hover);
+
+}
+
+.btn-outline{
+
+    background:transparent;
+
+    border:2px solid var(--am-primary);
+
+    color:var(--am-primary);
+
+}
+
+.btn-outline:hover{
+
+    background:var(--am-primary);
+
+    color:#ffffff;
+
+}

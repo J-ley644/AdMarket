@@ -24,6 +24,7 @@
 html{
     scroll-behavior:smooth;
     -webkit-text-size-adjust:100%;
+    color-scheme: light;
 }
 
 /* Base body */
@@ -38,6 +39,8 @@ body{
     text-rendering:optimizeLegibility;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
+
+    overflow-x:hidden;
 }
 
 /* Media */
