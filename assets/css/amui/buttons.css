@@ -336,57 +336,123 @@
 
 /* ==========================================================
    Compatibility Layer
-   Allows .btn classes to use AMUI styles
+   Temporary support for legacy .btn classes
 ========================================================== */
 
 .btn{
+
     display:inline-flex;
+
     align-items:center;
+
     justify-content:center;
-    gap:.5rem;
-    border:none;
-    cursor:pointer;
-    text-decoration:none;
+
+    gap:.6rem;
+
+    padding:.9rem 1.7rem;
+
+    border-radius:14px;
+
     font-family:var(--am-font);
-    font-weight:600;
+
     font-size:1rem;
-    padding:.75rem 1.25rem;
-    border-radius:12px;
-    transition:.3s;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        background .3s ease,
+        color .3s ease;
+
 }
 
 .btn:hover{
-    transform:translateY(-2px);
+
+    transform:translateY(-3px);
+
 }
+
+/* ==========================
+   Primary
+========================== */
 
 .btn-primary{
 
-    background:var(--am-primary);
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #3b82f6
+    );
 
     color:#ffffff;
+
+    border:none;
+
+    box-shadow:
+        0 12px 30px rgba(37,99,235,.30);
 
 }
 
 .btn-primary:hover{
 
-    background:var(--am-primary-hover);
+    box-shadow:
+        0 20px 40px rgba(37,99,235,.45);
 
 }
 
+/* ==========================
+   Outline
+========================== */
+
 .btn-outline{
 
-    background:transparent;
+    background:rgba(255,255,255,.08);
 
-    border:2px solid var(--am-primary);
+    color:#ffffff;
 
-    color:var(--am-primary);
+    border:1px solid rgba(255,255,255,.35);
+
+    backdrop-filter:blur(12px);
 
 }
 
 .btn-outline:hover{
 
-    background:var(--am-primary);
+    background:#ffffff;
 
-    color:#ffffff;
+    color:#2563eb;
+
+    border-color:#ffffff;
+
+}
+
+/* ==========================
+   Hero Buttons
+========================== */
+
+.hero .btn{
+
+    min-width:180px;
+
+    min-height:56px;
+
+}
+
+/* ==========================
+   Navbar Buttons
+========================== */
+
+.navbar .btn{
+
+    padding:.75rem 1.35rem;
+
+    min-height:46px;
+
+    font-size:.95rem;
 
 }
