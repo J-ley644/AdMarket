@@ -1,0 +1,65 @@
+/* ==========================================
+   AMUI Forms
+   Version: 1.0.0
+========================================== */
+
+.am-form-group,
+.form-group{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    gap:.45rem;
+    margin-bottom:1rem;
+}
+
+.am-input,
+.form-control{
+    width:100%;
+    min-height:48px;
+    padding:0 1rem;
+    border:1px solid var(--am-border, #e5e7eb);
+    border-radius:var(--am-radius-md, 10px);
+    background:var(--am-surface, #f8fafc);
+    color:var(--am-text, #111827);
+    transition:var(--am-transition, .25s ease);
+}
+
+.am-input:hover,
+.form-control:hover{
+    border-color:var(--am-border-hover, #cbd5e1);
+}
+
+.am-input:focus,
+.form-control:focus{
+    border-color:var(--am-primary, #2563eb);
+    box-shadow:0 0 0 4px rgba(37,99,235,.12);
+    outline:none;
+    transform:translateY(-1px);
+}
+
+textarea.am-input,
+textarea.form-control{
+    min-height:140px;
+    padding:1rem;
+    resize:vertical;
+}
+
+.am-label,
+.form-label{
+    display:block;
+    font-size:.875rem;
+    font-weight:600;
+    color:var(--am-text, #111827);
+}
+
+.am-form-help,
+.form-help{
+    font-size:.85rem;
+    color:var(--am-text-light, #6b7280);
+}
+
+.am-form-error,
+.form-error{
+    font-size:.85rem;
+    color:var(--am-danger, #dc2626);
+}

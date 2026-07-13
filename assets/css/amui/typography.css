@@ -213,3 +213,38 @@ body{
     font-weight:700;
 
 }
+
+/* Reusable text helpers */
+
+.am-text-muted,
+.am-muted{
+
+    color:var(--am-text-light, #6b7280);
+
+}
+
+.am-text-primary{
+
+    color:var(--am-primary, #2563eb);
+
+}
+
+.am-lead{
+
+    font-size:1.125rem;
+
+    line-height:1.7;
+
+    color:var(--am-text-light, #6b7280);
+
+}
+
+.am-heading{
+
+    font-weight:700;
+
+    line-height:1.2;
+
+    color:var(--am-text, #111827);
+
+}

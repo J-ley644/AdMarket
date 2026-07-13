@@ -1,0 +1,47 @@
+/* ==========================================
+   AMUI Badges
+   Version: 1.0.0
+========================================== */
+
+.am-badge,
+.badge{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:.35rem .8rem;
+    border-radius:999px;
+    font-size:.75rem;
+    font-weight:600;
+    line-height:1;
+    white-space:nowrap;
+}
+
+.am-badge-primary,
+.badge-primary{
+    background:rgba(37,99,235,.12);
+    color:var(--am-primary, #2563eb);
+}
+
+.am-badge-success,
+.badge-success{
+    background:rgba(34,197,94,.12);
+    color:var(--am-success, #16a34a);
+}
+
+.am-badge-warning,
+.badge-warning{
+    background:rgba(245,158,11,.15);
+    color:#92400e;
+}
+
+.am-badge-danger,
+.badge-danger{
+    background:rgba(239,68,68,.12);
+    color:var(--am-danger, #dc2626);
+}
+
+.am-badge-info,
+.badge-info{
+    background:rgba(14,165,233,.12);
+    color:var(--am-info, #0ea5e9);
+}

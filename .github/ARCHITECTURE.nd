@@ -1,0 +1,89 @@
+# AdMarket Architecture
+
+## Overview
+
+AdMarket is a modular e-commerce marketplace.
+
+The project is divided into:
+
+- Frontend
+- Backend
+- Shared Design System (AMUI)
+
+---
+
+# Frontend
+
+Frontend uses:
+
+- HTML
+- CSS
+- Vanilla JavaScript
+
+Pages:
+
+Landing
+
+Authentication
+
+Marketplace
+
+Buyer Dashboard
+
+Seller Dashboard
+
+Admin Dashboard
+
+---
+
+# Design System
+
+AMUI
+
+Reusable UI components live inside:
+
+assets/css/amui/
+
+All reusable components begin with:
+
+am-
+
+---
+
+# Backend
+
+Express
+
+Prisma
+
+PostgreSQL
+
+JWT Authentication
+
+REST API
+
+---
+
+# Development Workflow
+
+1. Build one feature.
+
+2. Test.
+
+3. Commit.
+
+4. Push.
+
+5. Continue.
+
+---
+
+# Coding Philosophy
+
+Readable.
+
+Modular.
+
+Reusable.
+
+Production-ready.
