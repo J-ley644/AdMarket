@@ -157,14 +157,6 @@
 
     </div>
 
-    <div class="hero-image">
-
-    <img
-        src="assets/images/people1.jpg"
-        alt="People shopping online">
-
-</div>
-
     <div class="hero-stats">
 
         <div class="stat">
@@ -186,6 +178,16 @@
 
 </div>
 
+<div class="hero-image">
+
+    <img src="assets/images/people1.jpg"
+     alt="people shopping online">
+</div>
+
+</div>
+
+</section>
+
     <main>
 
                 <!-- =====================================
@@ -198,7 +200,7 @@
 
                 <div class="section-header">
 
-                    <span class="badge badge-primary">
+                    <span class="am-badge am-badge-primary">
                         Browse
                     </span>
 
@@ -211,61 +213,197 @@
 
                 </div>
 
-                <div class="categories-grid">
+                <!-- Categories Slider -->
 
-                    <a href="#" class="category-card">
-                        <div class="category-icon">📱</div>
-                        <h3>Electronics</h3>
-                        <p>Phones, laptops, accessories and gadgets.</p>
-                    </a>
+                <!-- ======================================================
+     CATEGORY NAVIGATION
+====================================================== -->
 
-                    <a href="#" class="category-card">
-                        <div class="category-icon">👕</div>
-                        <h3>Fashion</h3>
-                        <p>Clothing, shoes and accessories.</p>
-                    </a>
+<div class="am-carousel">
 
-                    <a href="#" class="category-card">
-                        <div class="category-icon">🏠</div>
-                        <h3>Home & Living</h3>
-                        <p>Furniture, décor and appliances.</p>
-                    </a>
+    <button class="am-carousel-prev">
+        &#10094;
+    </button>
 
-                    <a href="#" class="category-card">
-                        <div class="category-icon">💄</div>
-                        <h3>Beauty</h3>
-                        <p>Cosmetics and personal care.</p>
-                    </a>
+    <div class="am-carousel-track">
 
-                    <a href="#" class="category-card">
-                        <div class="category-icon">🛒</div>
-                        <h3>Groceries</h3>
-                        <p>Everyday essentials delivered fast.</p>
-                    </a>
+        <a href="pages/marketplace/categories/electronics.html" class="am-category-link">
+            Electronics
+        </a>
 
-                    <a href="#" class="category-card">
-                        <div class="category-icon">🚗</div>
-                        <h3>Automotive</h3>
-                        <p>Vehicle accessories and spare parts.</p>
-                    </a>
+        <a href="pages/marketplace/categories/fashion.html" class="am-category-link">
+            Fashion
+        </a>
 
-                    <a href="#" class="category-card">
-                        <div class="category-icon">💻</div>
-                        <h3>Computers</h3>
-                        <p>Desktops, monitors and components.</p>
-                    </a>
+        <a href="pages/marketplace/categories/home.html" class="am-category-link">
+            Home
+        </a>
 
-                    <a href="#" class="category-card">
-                        <div class="category-icon">🎮</div>
-                        <h3>Gaming</h3>
-                        <p>Consoles, games and accessories.</p>
-                    </a>
+        <a href="pages/marketplace/categories/beauty.html" class="am-category-link">
+            Beauty
+        </a>
 
-                </div>
+        <a href="pages/marketplace/categories/groceries.html" class="am-category-link">
+            Groceries
+        </a>
+
+        <a href="pages/marketplace/categories/automotive.html" class="am-category-link">
+            Automotive
+        </a>
+
+        <a href="pages/marketplace/categories/computers.html" class="am-category-link">
+            Computers
+        </a>
+
+        <a href="pages/marketplace/categories/gaming.html" class="am-category-link">
+            Gaming
+        </a>
+
+    </div>
+
+    <button class="am-carousel-next">
+        &#10095;
+    </button>
+
+</div>
 
             </div>
 
         </section>
+
+        <!-- =====================================
+     TRENDING PRODUCTS
+====================================== -->
+
+<section id="trending" class="section">
+
+    <div class="am-container">
+
+        <div class="section-header">
+
+            <span class="am-badge am-badge-primary">
+                Trending
+            </span>
+
+            <h2>🔥 Trending Right Now</h2>
+
+            <p>
+                The hottest products currently loved by shoppers.
+            </p>
+
+        </div>
+
+        <div class="trending-grid">
+
+            <article class="am-card product-card">
+
+                <img
+                    src="assets/images/products/laptop.jpg"
+                    alt="Laptop">
+
+                <div class="product-content">
+
+                    <span class="am-badge">
+                        Electronics
+                    </span>
+
+                    <h3>HP EliteBook</h3>
+
+                    <p class="price">
+                        KSh 68,500
+                    </p>
+
+                    <button class="am-btn am-btn-primary am-btn-block">
+                        View Product
+                    </button>
+
+                </div>
+
+            </article>
+
+            <article class="am-card product-card">
+
+                <img
+                    src="assets/images/products/shoes.jpg"
+                    alt="Shoes">
+
+                <div class="product-content">
+
+                    <span class="am-badge">
+                        Fashion
+                    </span>
+
+                    <h3>Nike Air Max</h3>
+
+                    <p class="price">
+                        KSh 12,900
+                    </p>
+
+                    <button class="am-btn am-btn-primary am-btn-block">
+                        View Product
+                    </button>
+
+                </div>
+
+            </article>
+
+            <article class="am-card product-card">
+
+                <img
+                    src="assets/images/products/phone.jpg"
+                    alt="Phone">
+
+                <div class="product-content">
+
+                    <span class="am-badge">
+                        Phones
+                    </span>
+
+                    <h3>Samsung Galaxy S25</h3>
+
+                    <p class="price">
+                        KSh 128,000
+                    </p>
+
+                    <button class="am-btn am-btn-primary am-btn-block">
+                        View Product
+                    </button>
+
+                </div>
+
+            </article>
+
+            <article class="am-card product-card">
+
+                <img
+                    src="assets/images/products/headphones.jpg"
+                    alt="Headphones">
+
+                <div class="product-content">
+
+                    <span class="am-badge">
+                        Audio
+                    </span>
+
+                    <h3>Sony WH-1000XM6</h3>
+
+                    <p class="price">
+                        KSh 39,999
+                    </p>
+
+                    <button class="am-btn am-btn-primary am-btn-block">
+                        View Product
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
 
         <!-- =====================================
              FEATURED PRODUCTS
@@ -277,7 +415,7 @@
 
                 <div class="section-header">
 
-                    <span class="badge badge-success">
+                    <span class="am-badge am-badge-success">
                         Featured
                     </span>
 
@@ -304,7 +442,7 @@
 
                     <button
                         id="load-more-products"
-                        class="btn btn-outline">
+                        class="am-btn am-btn-outline">
 
                         Load More Products
 
@@ -326,7 +464,7 @@
 
                 <div class="section-header">
 
-                    <span class="badge badge-warning">
+                    <span class="am-badge am-badge-warning">
 
                         Trending
 
@@ -364,7 +502,7 @@
 
                 <div class="section-header">
 
-                    <span class="badge badge-primary">
+                    <span class="am-badge am-badge-primary">
                         Why AdMarket
                     </span>
 
@@ -542,7 +680,7 @@
 
                     <div>
 
-                        <span class="badge badge-success">
+                        <span class="am-badge am-badge-success">
                             For Businesses
                         </span>
 
@@ -605,7 +743,7 @@
 
                 <div class="section-header">
 
-                    <span class="badge badge-warning">
+                    <span class="am-badge am-badge-warning">
 
                         Testimonials
 
@@ -649,7 +787,7 @@
 
                     <div class="newsletter-content">
 
-                        <span class="badge badge-primary">
+                        <span class="am-badge am-badge-primary">
                             Stay Updated
                         </span>
 

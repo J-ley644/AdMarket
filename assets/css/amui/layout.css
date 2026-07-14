@@ -1,0 +1,24 @@
+/* ==========================================
+   AMUI Layout
+========================================== */
+
+.am-container,
+.container{
+    width:100%;
+    max-width:1280px;
+    margin:0 auto;
+    padding:0 24px;
+}
+
+.am-section,
+.section{
+    padding:6rem 0;
+}
+
+.am-grid{
+    display:grid;
+}
+
+.am-flex{
+    display:flex;
+}
