@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Homepage Manager | AdMarket Admin</title>
+
+    <link rel="stylesheet" href="../../assets/css/app.css">
+
+</head>
+
+<body>
+
+    <main class="dashboard">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <h1>Homepage Manager</h1>
+
+                <p>
+                    Manage everything displayed on the AdMarket landing page.
+                </p>
+
+            </div>
+
+            <!-- Hero Banner -->
+
+            <section class="section">
+
+                <h2>Hero Banner</h2>
+
+                <div class="dashboard-form">
+
+                    <input
+                        type="text"
+                        placeholder="Hero Heading">
+
+                    <textarea
+                        placeholder="Hero Subtitle"></textarea>
+
+                    <input
+                        type="file">
+
+                    <button class="am-btn am-btn-primary">
+                        Save Hero
+                    </button>
+
+                </div>
+
+            </section>
+
+            <!-- Trending Products -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>Trending Products</h2>
+
+                    <button class="am-btn am-btn-primary">
+                        Add Product
+                    </button>
+
+                </div>
+
+                <div class="dashboard-table">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Product</th>
+                                <th>Category</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="trending-products-table">
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+            <!-- Featured Categories -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>Featured Categories</h2>
+
+                </div>
+
+                <div class="categories-grid">
+
+                    <label><input type="checkbox"> Electronics</label>
+                    <label><input type="checkbox"> Fashion</label>
+                    <label><input type="checkbox"> Beauty</label>
+                    <label><input type="checkbox"> Home</label>
+                    <label><input type="checkbox"> Groceries</label>
+                    <label><input type="checkbox"> Automotive</label>
+                    <label><input type="checkbox"> Computers</label>
+                    <label><input type="checkbox"> Gaming</label>
+
+                </div>
+
+            </section>
+
+            <!-- Featured Businesses -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>Featured Businesses</h2>
+
+                    <button class="am-btn am-btn-primary">
+
+                        Add Business
+
+                    </button>
+
+                </div>
+
+                <div class="dashboard-table">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Business</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="featured-businesses-table">
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+            <!-- Testimonials -->
+
+            <section class="section">
+
+                <div class="section-header">
+
+                    <h2>Testimonials</h2>
+
+                    <button class="am-btn am-btn-primary">
+
+                        Add Testimonial
+
+                    </button>
+
+                </div>
+
+                <div id="testimonial-list">
+
+                </div>
+
+            </section>
+
+            <!-- Publish -->
+
+            <section class="section">
+
+                <button class="am-btn am-btn-success">
+
+                    Publish Homepage
+
+                </button>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <script src="../../assets/js/core/app.js"></script>
+
+</body>
+
+</html>
