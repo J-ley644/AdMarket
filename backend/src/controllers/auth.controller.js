@@ -1,3 +1,4 @@
+const prisma = require("../config/prisma");
 
 const {
     registerUser,
@@ -6,13 +7,19 @@ const {
 
 const { generateToken } = require("../utils/jwt");
 
+// ==========================================
+// Register User
+// ==========================================
+
 const register = async (req, res, next) => {
+
     try {
+
         const user = await registerUser(req.body);
 
         const token = generateToken(user);
 
-        res.status(201).json({
+        return res.status(201).json({
             success: true,
             message: "Registration successful.",
             token,
@@ -22,20 +29,31 @@ const register = async (req, res, next) => {
                 lastName: user.lastName,
                 email: user.email,
                 role: user.role,
+                isVerified: user.isVerified,
             },
         });
+
     } catch (error) {
+
         next(error);
+
     }
+
 };
 
+// ==========================================
+// Login User
+// ==========================================
+
 const login = async (req, res, next) => {
+
     try {
+
         const user = await loginUser(req.body);
 
         const token = generateToken(user);
 
-        res.status(200).json({
+        return res.status(200).json({
             success: true,
             message: "Login successful.",
             token,
@@ -45,46 +63,66 @@ const login = async (req, res, next) => {
                 lastName: user.lastName,
                 email: user.email,
                 role: user.role,
+                isVerified: user.isVerified,
             },
         });
+
     } catch (error) {
+
         next(error);
+
     }
+
 };
 
-const prisma = require("../config/prisma");
+// ==========================================
+// Get Logged-in User
+// ==========================================
 
 const getMe = async (req, res, next) => {
+
     try {
+
         const user = await prisma.user.findUnique({
+
             where: {
                 id: req.user.id,
             },
+
             select: {
                 id: true,
                 firstName: true,
                 lastName: true,
                 email: true,
+                phone: true,
                 role: true,
+                isVerified: true,
                 createdAt: true,
+                updatedAt: true,
             },
+
         });
 
         if (!user) {
+
             return res.status(404).json({
                 success: false,
                 message: "User not found.",
             });
+
         }
 
-        res.status(200).json({
+        return res.status(200).json({
             success: true,
             user,
         });
 
     } catch (error) {
+
         next(error);
+
     }
+
 };
 
 module.exports = {

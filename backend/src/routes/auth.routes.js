@@ -6,6 +6,7 @@ const {
     getMe,
 } = require("../controllers/auth.controller");
 const protect = require("../middleware/auth.middleware");
+const authorize = require("../middleware/role.middleware");
 const validate = require("../middleware/validation.middleware");
 const {
     registerValidator,
@@ -31,10 +32,6 @@ router.post(
 
 router.get("/me", protect, getMe);
 
-module.exports = router;
-
-const authorize = require("../middleware/role.middleware");
-
 router.get(
     "/admin-test",
     protect,
@@ -46,3 +43,5 @@ router.get(
         });
     }
 );
+
+module.exports = router;

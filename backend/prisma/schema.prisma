@@ -13,6 +13,12 @@ enum UserRole {
   ADMIN
 }
 
+enum UserStatus {
+  ACTIVE
+  SUSPENDED
+  PENDING
+}
+
 model User {
   id           String   @id @default(uuid())
   firstName    String
@@ -24,4 +30,175 @@ model User {
   isVerified   Boolean  @default(false)
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
+
+  businesses Business[]
+}
+
+model Business {
+  id String @id @default(uuid())
+
+  name        String
+  description String?
+
+  logo       String?
+  coverImage String?
+
+  email String?
+  phone String?
+
+  country String?
+  county  String?
+  city    String?
+  address String?
+
+  website String?
+
+  isVerified Boolean @default(false)
+  isActive   Boolean @default(true)
+
+  ownerId String
+
+  homepageItems HomepageSectionItem[]
+
+  owner User @relation(fields: [ownerId], references: [id], onDelete: Cascade)
+
+  // THIS LINE MUST EXIST
+  products Product[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Category {
+  id String @id @default(uuid())
+
+  name String @unique
+  slug String @unique
+
+  icon        String?
+  description String?
+  image       String?
+
+  isActive Boolean @default(true)
+
+  products Product[]
+
+  homepageItems HomepageSectionItem[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+enum ProductStatus {
+  DRAFT
+  ACTIVE
+  OUT_OF_STOCK
+  ARCHIVED
+}
+
+model Product {
+  id String @id @default(uuid())
+
+  name String
+  slug String @unique
+
+  shortDescription String?
+  description      String?
+
+  sku String? @unique
+
+  price         Decimal  @db.Decimal(10, 2)
+  discountPrice Decimal? @db.Decimal(10, 2)
+
+  stock Int @default(0)
+
+  thumbnail String?
+  images    String[]
+
+  isFeatured Boolean @default(false)
+  isTrending Boolean @default(false)
+
+  status ProductStatus @default(DRAFT)
+
+  views Int @default(0)
+
+  businessId String
+  categoryId String
+
+  homepageItems HomepageSectionItem[]
+
+  business Business @relation(fields: [businessId], references: [id], onDelete: Cascade)
+
+  category Category @relation(fields: [categoryId], references: [id])
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+enum HomepageSectionType {
+  HERO
+  FEATURED_PRODUCTS
+  TRENDING_PRODUCTS
+  CATEGORIES
+  BUSINESSES
+  PROMOTIONS
+}
+
+model HomepageSection {
+  id String @id @default(uuid())
+
+  title String
+
+  subtitle String?
+
+  type HomepageSectionType
+
+  isEnabled Boolean @default(true)
+
+  displayOrder Int
+
+  // THIS LINE MUST EXIST
+  items HomepageSectionItem[]
+
+  createdAt DateTime @default(now())
+
+  updatedAt DateTime @updatedAt
+}
+
+model HomepageSectionItem {
+  id String @id @default(uuid())
+
+  sectionId String
+
+  productId String?
+
+  businessId String?
+
+  categoryId String?
+
+  image String?
+
+  title String?
+
+  subtitle String?
+
+  buttonText String?
+
+  buttonLink String?
+
+  displayOrder Int
+
+  isEnabled Boolean @default(true)
+
+  section HomepageSection @relation(fields: [sectionId], references: [id], onDelete: Cascade)
+
+  product Product? @relation(fields: [productId], references: [id])
+
+  business Business? @relation(fields: [businessId], references: [id])
+
+  category Category? @relation(fields: [categoryId], references: [id])
+
+  createdAt DateTime @default(now())
+
+  updatedAt DateTime @updatedAt
 }
