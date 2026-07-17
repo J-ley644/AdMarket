@@ -49,6 +49,67 @@ const createProductValidator = [
 
 ];
 
+// ==========================================
+// Update Product Validator
+// ==========================================
+
+const updateProductValidator = [
+
+    body("name")
+        .optional()
+        .trim()
+        .isLength({ min: 3, max: 150 })
+        .withMessage("Product name must be between 3 and 150 characters."),
+
+    body("slug")
+        .optional()
+        .trim(),
+
+    body("price")
+        .optional()
+        .isFloat({ min: 0 })
+        .withMessage("Price must be a valid positive number."),
+
+    body("discountPrice")
+        .optional()
+        .isFloat({ min: 0 })
+        .withMessage("Discount price must be a valid number."),
+
+    body("stock")
+        .optional()
+        .isInt({ min: 0 })
+        .withMessage("Stock must be zero or greater."),
+
+    body("businessId")
+        .optional()
+        .notEmpty()
+        .withMessage("Business ID cannot be empty."),
+
+    body("categoryId")
+        .optional()
+        .notEmpty()
+        .withMessage("Category ID cannot be empty."),
+
+    body("description")
+        .optional()
+        .trim(),
+
+    body("shortDescription")
+        .optional()
+        .trim(),
+
+    body("thumbnail")
+        .optional()
+        .trim(),
+
+    body("images")
+        .optional()
+        .isArray()
+        .withMessage("Images must be an array."),
+
+];
+
 module.exports = {
     createProductValidator,
+    updateProductValidator,
 };
