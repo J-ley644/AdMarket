@@ -3,422 +3,625 @@
 
 <head>
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>AdMarket | Authentication</title>
+<title>AdMarket | Authentication</title>
 
-    <meta
-        name="description"
-        content="Login or create your AdMarket account.">
+<meta 
+name="description"
+content="Login or create your AdMarket account.">
 
-    <meta
-        name="theme-color"
-        content="#2563eb">
 
-    <!-- CSS -->
+<!-- CSS -->
 
-    <link rel="stylesheet" href="assets/css/variables.css">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/utilities.css">
-    <link rel="stylesheet" href="assets/css/components.css">
-    <link rel="stylesheet" href="assets/css/app.css">
+<link rel="stylesheet" href="assets/css/variables.css">
+<link rel="stylesheet" href="assets/css/reset.css">
+<link rel="stylesheet" href="assets/css/utilities.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/app.css">
+
 
 </head>
 
+
 <body>
 
-    <!-- Loader -->
 
-    <div id="loader" class="loader">
+<div id="loader" class="loader">
 
-        <div class="spinner"></div>
+<div class="spinner"></div>
 
-    </div>
+</div>
 
-    <main class="auth-page">
 
-        <div class="auth-container">
 
-            <!-- Logo -->
+<main class="auth-page">
 
-            <a
-                href="index.html"
-                class="auth-logo">
 
-                <img
-                    src="assets/images/logo.png"
-                    alt="AdMarket Logo"
-                    width="60"
-                    height="60">
+<div class="auth-container">
 
-                <h1>AdMarket</h1>
 
-            </a>
+<!-- LOGO -->
 
-            <p class="auth-subtitle">
+<a href="index.html" class="auth-logo">
 
-                Buy • Sell • Discover • Grow
+<img
+src="assets/images/logo.png"
+alt="AdMarket Logo"
+width="60"
+height="60">
 
-            </p>
+<h1>AdMarket</h1>
 
-            <!-- Authentication Card -->
+</a>
 
-            <section class="auth-card">
 
-                <!-- Login/Register Switch -->
 
-                <div class="auth-switch">
+<p class="auth-subtitle">
 
-                    <button
-                        id="login-tab"
-                        class="auth-tab active"
-                        type="button">
+Buy • Sell • Discover • Grow
 
-                        Login
+</p>
 
-                    </button>
 
-                    <button
-                        id="register-tab"
-                        class="auth-tab"
-                        type="button">
 
-                        Register
 
-                    </button>
+<section class="auth-card">
 
-                    <!-- Sliding Indicator -->
 
-                    <span
-                        class="auth-switch-indicator">
 
-                    </span>
+<!-- SWITCH BUTTONS -->
 
-                </div>
+<div class="auth-switch">
 
-                <!-- =====================================
-                     LOGIN FORM
-                ====================================== -->
 
-                <form
-                    id="login-form"
-                    autocomplete="off">
+<button
 
-                    <div class="form-group">
+id="login-tab"
 
-                        <label
-                            for="login-email"
-                            class="form-label">
+class="auth-tab active"
 
-                            Email Address
+type="button">
 
-                        </label>
+Login
 
-                        <input
-                            id="login-email"
-                            class="form-control"
-                            type="email"
-                            required>
+</button>
 
-                    </div>
 
-                    <div class="form-group">
 
-                        <label
-                            for="login-password"
-                            class="form-label">
+<button
 
-                            Password
+id="register-tab"
 
-                        </label>
+class="auth-tab"
 
-                        <input
-                            id="login-password"
-                            class="form-control"
-                            type="password"
-                            required>
+type="button">
 
-                    </div>
+Register
 
-                    <div
-                        class="flex justify-between items-center mb-5">
+</button>
 
-                        <label>
 
-                            <input
-                                type="checkbox">
 
-                            Remember Me
+<span class="auth-switch-indicator"></span>
 
-                        </label>
 
-                        <button
-                            type="button"
-                            id="forgot-password-btn"
-                            class="link-button">
+</div>
 
-                            Forgot Password?
 
-                        </button>
 
-                    </div>
 
-                    <button
-                        class="btn btn-primary btn-block"
-                        type="submit">
 
-                        Login
+<!-- LOGIN FORM -->
 
-                    </button>
 
-                </form>
+<form
 
-                                <!-- =====================================
-                     REGISTER FORM
-                ====================================== -->
+id="login-form"
 
-                <form
-                    id="register-form"
-                    class="auth-form"
-                    autocomplete="off"
-                    hidden>
+class="auth-form">
 
-                    <div class="form-group">
 
-                        <label
-                            for="register-name"
-                            class="form-label">
+<div class="form-group">
 
-                            Full Name
 
-                        </label>
+<label class="form-label">
 
-                        <input
-                            id="register-name"
-                            class="form-control"
-                            type="text"
-                            maxlength="100"
-                            required>
+Email Address
 
-                    </div>
+</label>
 
-                    <div class="form-group">
 
-                        <label
-                            for="register-email"
-                            class="form-label">
 
-                            Email Address
+<input
 
-                        </label>
+id="login-email"
 
-                        <input
-                            id="register-email"
-                            class="form-control"
-                            type="email"
-                            required>
+class="form-control"
 
-                    </div>
+type="email"
 
-                    <div class="form-group">
+required>
 
-                        <label
-                            for="register-phone"
-                            class="form-label">
 
-                            Phone Number
+</div>
 
-                        </label>
 
-                        <input
-                            id="register-phone"
-                            class="form-control"
-                            type="tel"
-                            placeholder="+254..."
-                            required>
 
-                    </div>
 
-                    <div class="form-group">
 
-                        <label
-                            for="register-password"
-                            class="form-label">
+<div class="form-group">
 
-                            Password
 
-                        </label>
+<label class="form-label">
 
-                        <input
-                            id="register-password"
-                            class="form-control"
-                            type="password"
-                            required>
+Password
 
-                    </div>
+</label>
 
-                    <div class="form-group">
 
-                        <label
-                            for="register-confirm-password"
-                            class="form-label">
 
-                            Confirm Password
+<input
 
-                        </label>
+id="login-password"
 
-                        <input
-                            id="register-confirm-password"
-                            class="form-control"
-                            type="password"
-                            required>
+class="form-control"
 
-                    </div>
+type="password"
 
-                    <!-- Account Type -->
+required>
 
-                    <div class="form-group">
 
-                        <label class="form-label">
+</div>
 
-                            Account Type
 
-                        </label>
 
-                        <div class="account-types">
 
-                            <label class="account-option">
 
-                                <input
-                                    type="radio"
-                                    name="accountType"
-                                    value="buyer"
-                                    checked>
+<button
 
-                                <span>
+type="submit"
 
-                                    <strong>Buyer</strong>
+class="btn btn-primary btn-block">
 
-                                    <small>
-                                        Shop and place orders.
-                                    </small>
 
-                                </span>
+Login
 
-                            </label>
 
-                            <label class="account-option">
+</button>
 
-                                <input
-                                    type="radio"
-                                    name="accountType"
-                                    value="business">
 
-                                <span>
 
-                                    <strong>Business</strong>
+</form>
 
-                                    <small>
-                                        Sell products and manage a store.
-                                    </small>
 
-                                </span>
 
-                            </label>
 
-                        </div>
 
-                    </div>
 
-                    <button
-                        type="submit"
-                        class="btn btn-primary btn-block">
+<!-- REGISTER FORM -->
 
-                        Create Account
 
-                    </button>
+<form
 
-                </form>
+id="register-form"
 
-                <!-- Divider -->
+class="auth-form"
 
-                <div class="auth-divider">
+hidden>
 
-                    <span>or continue with</span>
 
-                </div>
 
-                <!-- Social Login -->
+<div class="form-group">
 
-                <div class="social-login">
 
-                    <button
-                        id="google-signin"
-                        type="button"
-                        class="btn btn-outline btn-block">
+<label class="form-label">
 
-                        Continue with Google
+Full Name
 
-                    </button>
+</label>
 
-                    <button
-                        type="button"
-                        class="btn btn-outline btn-block"
-                        disabled>
 
-                        Apple (Coming Soon)
 
-                    </button>
+<input
 
-                    <button
-                        type="button"
-                        class="btn btn-outline btn-block"
-                        disabled>
+id="register-name"
 
-                        Microsoft (Coming Soon)
+class="form-control"
 
-                    </button>
+type="text"
 
-                    <button
-                        type="button"
-                        class="btn btn-outline btn-block"
-                        disabled>
+required>
 
-                        GitHub (Coming Soon)
 
-                    </button>
+</div>
 
-                </div>
 
-                <div class="auth-footer">
 
-                    <small>
+<div class="form-group">
 
-                        By continuing, you agree to our
-                        <a href="#">Terms of Service</a>
-                        and
-                        <a href="#">Privacy Policy</a>.
 
-                    </small>
+<label class="form-label">
 
-                </div>
+Email Address
 
-            </section>
+</label>
 
-        </div>
 
-    </main>
 
-    <script src="assets/js/core/api.js"></script>
+<input
+
+id="register-email"
+
+class="form-control"
+
+type="email"
+
+required>
+
+
+</div>
+
+
+
+
+<div class="form-group">
+
+
+<label class="form-label">
+
+Phone Number
+
+</label>
+
+
+
+<input
+
+id="register-phone"
+
+class="form-control"
+
+type="tel"
+
+placeholder="+254..."
+
+required>
+
+
+</div>
+
+
+
+<div class="form-group">
+
+
+<label class="form-label">
+
+Password
+
+</label>
+
+
+<input
+
+id="register-password"
+
+class="form-control"
+
+type="password"
+
+required>
+
+
+</div>
+
+
+
+
+<div class="form-group">
+
+
+<label class="form-label">
+
+Confirm Password
+
+</label>
+
+
+
+<input
+
+id="register-confirm-password"
+
+class="form-control"
+
+type="password"
+
+required>
+
+
+</div>
+
+
+
+
+
+<!-- ACCOUNT TYPE -->
+
+
+<div class="form-group">
+
+
+<label class="form-label">
+
+Account Type
+
+</label>
+
+
+
+
+<div class="account-types">
+
+
+
+<label class="account-option">
+
+
+<input
+
+type="radio"
+
+name="accountType"
+
+value="buyer"
+
+checked>
+
+
+<span>
+
+<strong>Buyer</strong>
+
+<small>
+
+Shop and place orders.
+
+</small>
+
+</span>
+
+
+</label>
+
+
+
+
+<label class="account-option">
+
+
+<input
+
+type="radio"
+
+name="accountType"
+
+value="business">
+
+
+<span>
+
+
+<strong>Business</strong>
+
+
+<small>
+
+Sell products and manage a store.
+
+</small>
+
+
+</span>
+
+
+</label>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<button
+
+type="submit"
+
+class="btn btn-primary btn-block">
+
+
+Create Account
+
+
+</button>
+
+
+
+</form>
+
+
+
+
+
+<!-- DIVIDER -->
+
+
+<div class="auth-divider">
+
+<span>
+
+or continue with
+
+</span>
+
+</div>
+
+
+
+
+
+
+<!-- SOCIAL LOGIN -->
+
+
+<div class="social-login">
+
+
+<button
+
+id="google-signin"
+
+type="button"
+
+class="btn btn-outline btn-block">
+
+
+Continue with Google
+
+
+</button>
+
+
+
+<button
+
+type="button"
+
+class="btn btn-outline btn-block"
+
+disabled>
+
+
+Apple (Coming Soon)
+
+
+</button>
+
+
+
+
+<button
+
+type="button"
+
+class="btn btn-outline btn-block"
+
+disabled>
+
+
+Microsoft (Coming Soon)
+
+
+</button>
+
+
+
+
+<button
+
+type="button"
+
+class="btn btn-outline btn-block"
+
+disabled>
+
+
+GitHub (Coming Soon)
+
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="auth-footer">
+
+
+<small>
+
+
+By continuing, you agree to our
+
+<a href="#">
+
+Terms of Service
+
+</a>
+
+
+and
+
+
+<a href="#">
+
+Privacy Policy
+
+</a>
+
+
+</small>
+
+
+</div>
+
+
+
+</section>
+
+
+
+</div>
+
+
+
+</main>
+
+
+
+
+
+
+
+<!-- JAVASCRIPT -->
+
+
+<script src="assets/js/core/api.js"></script>
+
 <script src="assets/js/core/loader.js"></script>
+
 <script src="assets/js/core/toast.js"></script>
+
 <script src="assets/js/core/validator.js"></script>
+
+
 <script src="assets/js/auth.js"></script>
 
+
+
 </body>
+
 
 </html>

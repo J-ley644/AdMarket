@@ -1,43 +1,27 @@
 /* ==========================================================
-   AdMarket Authentication Styles
-==========================================================*/
+   AdMarket Authentication Styles FIXED
+========================================================== */
+
 
 .auth-page{
     min-height:100vh;
     display:flex;
-    align-items:center;
     justify-content:center;
-    padding:2rem;
+    align-items:flex-start;
+    padding:2rem 1rem;
     position:relative;
-    overflow:hidden;
+    overflow-y:auto;
 }
 
-.auth-page::before{
-    content:"";
-    position:absolute;
-    width:500px;
-    height:500px;
-    background:radial-gradient(circle, rgba(37,99,235,.12), transparent 70%);
-    top:-180px;
-    left:-180px;
-    border-radius:50%;
-}
 
-.auth-page::after{
-    content:"";
-    position:absolute;
-    width:450px;
-    height:450px;
-    border-radius:50%;
-    background:radial-gradient(circle, rgba(96,165,250,.12), transparent 70%);
-    right:-160px;
-    bottom:-160px;
-}
 
 .auth-container{
     width:100%;
     max-width:480px;
+    margin:auto;
 }
+
+
 
 .auth-logo{
     display:flex;
@@ -47,16 +31,22 @@
     margin-bottom:.5rem;
 }
 
+
+
 .auth-logo img{
     width:72px;
     height:72px;
     object-fit:contain;
 }
 
+
+
 .auth-logo h1{
     font-size:2rem;
     color:var(--primary);
 }
+
+
 
 .auth-subtitle{
     text-align:center;
@@ -64,226 +54,246 @@
     margin-bottom:2rem;
 }
 
+
+
+
 .auth-card{
+
     background:var(--surface);
+
     border:1px solid var(--border);
+
     border-radius:24px;
+
     padding:2rem;
+
     box-shadow:0 15px 40px rgba(0,0,0,.08);
-    position:relative;
-    overflow:hidden;
-    animation:authCardIn .6s ease;
+
 }
 
-.auth-card::before{
-    content:"";
-    position:absolute;
-    inset:-150px;
-    background:radial-gradient(circle, rgba(37,99,235,.08), transparent 65%);
-    pointer-events:none;
-    z-index:0;
-}
 
-.auth-card>*{
-    position:relative;
-    z-index:1;
-}
+
 
 .auth-switch{
+
     position:relative;
+
     display:grid;
+
     grid-template-columns:1fr 1fr;
+
     background:var(--gray-100);
+
     border-radius:999px;
+
     padding:5px;
+
     margin-bottom:2rem;
+
 }
+
+
 
 .auth-tab{
+
     position:relative;
+
     z-index:2;
+
     border:none;
+
     background:none;
+
     height:46px;
+
     font-weight:600;
+
     border-radius:999px;
-    transition:.3s;
+
+    cursor:pointer;
+
 }
+
+
+
 
 .auth-tab.active{
+
     color:white;
+
 }
+
+
 
 .auth-switch-indicator{
+
     position:absolute;
+
     top:5px;
+
     left:5px;
+
     width:calc(50% - 5px);
+
     height:46px;
+
     border-radius:999px;
+
     background:var(--primary);
-    transition:.35s cubic-bezier(.4,0,.2,1);
+
+    transition:.35s;
+
 }
 
-.auth-switch.register .auth-switch-indicator{
-    transform:translateX(100%);
-}
 
-#login-form,
-#register-form{
-    display:flex;
-    flex-direction:column;
-    gap:.25rem;
-}
 
-.form-control{
-    transition:border-color .25s, box-shadow .25s;
-}
-
-.form-control:focus{
-    transform:translateY(-1px);
-}
-
-.link-button{
-    border:none;
-    background:none;
-    color:var(--primary);
-    cursor:pointer;
-    font-size:.9rem;
-}
-
-.link-button:hover{
-    text-decoration:underline;
-}
-
-.account-types{
-    display:grid;
-    gap:1rem;
-}
-
-.account-option{
-    display:flex;
-    align-items:flex-start;
-    gap:1rem;
-    border:1px solid var(--border);
-    border-radius:14px;
-    padding:1rem;
-    cursor:pointer;
-    transition:.25s;
-}
-
-.account-option:hover{
-    border-color:var(--primary);
-    background:#f8fbff;
-}
-
-.account-option input{
-    margin-top:4px;
-}
-
-.account-option strong{
-    display:block;
-    margin-bottom:.25rem;
-}
-
-.account-option small{
-    color:var(--text-light);
-}
-
-.auth-divider{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    margin:2rem 0;
-    color:var(--text-muted);
-    font-size:.9rem;
-}
-
-.social-login{
-    display:grid;
-    gap:.8rem;
-}
-
-.social-login .btn{
-    justify-content:center;
-    min-height:50px;
-}
-
-.social-login .btn:disabled{
-    opacity:.45;
-}
-
-.auth-footer{
-    margin-top:2rem;
-    text-align:center;
-    font-size:.85rem;
-    color:var(--text-muted);
-}
-
-.auth-footer a{
-    color:var(--primary);
-}
 
 .auth-form{
-    opacity:0;
-    transform:translateY(15px);
-    pointer-events:none;
-    display:none;
-}
 
-.auth-form.active{
     display:flex;
+
     flex-direction:column;
-    animation:fadeSlide .35s ease forwards;
-    pointer-events:auto;
+
+    gap:1rem;
+
 }
 
-#login-form.active{
+
+
+.auth-form[hidden]{
+
+    display:none;
+
+}
+
+
+
+
+.form-group{
+
     display:flex;
+
+    flex-direction:column;
+
+    gap:.5rem;
+
 }
 
-.btn{
-    transition:transform .25s, box-shadow .25s, background .25s;
+
+
+
+.form-control{
+
+    width:100%;
+
 }
 
-.btn:hover{
-    transform:translateY(-2px);
+
+
+.account-types{
+
+    display:grid;
+
+    gap:1rem;
+
 }
 
-.btn-primary:hover{
-    box-shadow:0 12px 30px rgba(37,99,235,.25);
+
+
+
+.account-option{
+
+    display:flex;
+
+    gap:1rem;
+
+    border:1px solid var(--border);
+
+    border-radius:14px;
+
+    padding:1rem;
+
 }
 
-.btn-outline:hover{
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+
+
+.auth-divider{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin:2rem 0;
+
 }
 
-@media (max-width:600px){
-    .auth-page{
-        padding:1rem;
-    }
 
-    .auth-card{
-        padding:1.5rem;
-        border-radius:20px;
-    }
 
-    .auth-logo img{
-        width:60px;
-        height:60px;
-    }
 
-    .auth-logo h1{
-        font-size:1.75rem;
-    }
+.social-login{
+
+    display:grid;
+
+    gap:.8rem;
+
 }
 
-@keyframes authCardIn{
-    from{opacity:0; transform:translateY(20px) scale(.97);}
-    to{opacity:1; transform:translateY(0) scale(1);}
+
+
+.auth-footer{
+
+    margin-top:2rem;
+
+    text-align:center;
+
 }
 
-@keyframes fadeSlide{
-    from{opacity:0; transform:translateY(15px);}
-    to{opacity:1; transform:none;}
+
+
+
+
+@media(max-width:600px){
+
+
+.auth-page{
+
+    padding:1rem;
+
+}
+
+
+
+.auth-card{
+
+    padding:1.5rem;
+
+}
+
+
+
+}
+
+/* Fix social login visibility */
+
+.auth-divider span {
+    color: var(--text-color, #333);
+}
+
+
+.social-login .btn {
+    color: var(--text-color, #333);
+    background: var(--surface, white);
+    border-color: var(--border);
+}
+
+
+.social-login .btn:disabled {
+    color: #666;
+    opacity: 1;
+}
+
+
+.auth-footer {
+    color: var(--text-color, #333);
 }
