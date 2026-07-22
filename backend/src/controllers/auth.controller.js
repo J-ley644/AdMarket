@@ -35,9 +35,16 @@ const register = async (req, res, next) => {
 
     } catch (error) {
 
-        next(error);
-
+    if (error.message === "Invalid email or password.") {
+        return res.status(401).json({
+            success: false,
+            message: error.message,
+        });
     }
+
+    next(error);
+
+}
 
 };
 

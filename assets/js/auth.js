@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+    // ==========================
+    // ELEMENTS
+    // ==========================
 
     const loginForm = document.getElementById("login-form");
     const registerForm = document.getElementById("register-form");
@@ -7,321 +10,167 @@ document.addEventListener("DOMContentLoaded", () => {
     const loginTab = document.getElementById("login-tab");
     const registerTab = document.getElementById("register-tab");
 
-
-
     // ==========================
-    // LOGIN / REGISTER SWITCH
+    // TAB SWITCHING
     // ==========================
 
-
-    loginTab.addEventListener("click", () => {
-
+    function showLogin() {
 
         loginForm.hidden = false;
-
         registerForm.hidden = true;
 
-
         loginTab.classList.add("active");
-
         registerTab.classList.remove("active");
 
+    }
 
-    });
-
-
-
-
-
-    registerTab.addEventListener("click", () => {
-
+    function showRegister() {
 
         loginForm.hidden = true;
-
         registerForm.hidden = false;
 
-
         registerTab.classList.add("active");
-
         loginTab.classList.remove("active");
 
+    }
 
-    });
+    loginTab.addEventListener("click", showLogin);
+    registerTab.addEventListener("click", showRegister);
 
-
-
-
-
-
+    // Default View
+    showLogin();
 
     // ==========================
     // LOGIN
     // ==========================
 
-
     loginForm.addEventListener("submit", async (e) => {
-
 
         e.preventDefault();
 
-
         try {
 
+            const email = document
+                .getElementById("login-email")
+                .value
+                .trim();
 
-            const email =
-                document.getElementById("login-email").value.trim();
-
-
-
-            const password =
-                document.getElementById("login-password").value;
-
-
-
+            const password = document
+                .getElementById("login-password")
+                .value;
 
             const response = await apiRequest("/auth/login", {
 
-
                 method: "POST",
 
-
                 body: JSON.stringify({
-
                     email,
-
                     password
-
                 })
-
 
             });
 
+            localStorage.setItem("token", response.token);
 
+            if (response.user) {
+                localStorage.setItem(
+                    "user",
+                    JSON.stringify(response.user)
+                );
+            }
 
+            alert("Login successful!");
 
+            window.location.href = "index.html";
 
-            localStorage.setItem(
-
-                "token",
-
-                response.token
-
-            );
-
-
-
-
-            alert("Login successful");
-
-
-
-            window.location.href = "dashboard.html";
-
-
-
-        } catch(error) {
-
-
+        } catch (error) {
 
             alert(error.message);
 
-
-
         }
 
-
-
     });
-
-
-
-
-
-
-
 
     // ==========================
     // REGISTER
     // ==========================
 
-
     registerForm.addEventListener("submit", async (e) => {
-
-
 
         e.preventDefault();
 
-
-
-
         try {
 
-
-
-            const name =
-                document.getElementById("register-name")
+            const fullName = document
+                .getElementById("register-name")
                 .value
                 .trim();
 
-
-
-            const email =
-                document.getElementById("register-email")
+            const email = document
+                .getElementById("register-email")
                 .value
                 .trim();
 
-
-
-
-            const phone =
-                document.getElementById("register-phone")
+            const phone = document
+                .getElementById("register-phone")
                 .value
                 .trim();
 
-
-
-
-            const password =
-                document.getElementById("register-password")
+            const password = document
+                .getElementById("register-password")
                 .value;
 
-
-
-
-            const confirmPassword =
-                document.getElementById(
-                    "register-confirm-password"
-                )
+            const confirmPassword = document
+                .getElementById("register-confirm-password")
                 .value;
 
-
-
-
-
-
-            if(password !== confirmPassword) {
-
-
-                throw new Error(
-                    "Passwords do not match"
-                );
-
-
+            if (password !== confirmPassword) {
+                throw new Error("Passwords do not match.");
             }
 
+            const names = fullName.split(" ");
 
+            const firstName = names.shift();
 
+            const lastName = names.join(" ") || "-";
 
+            const accountType = document.querySelector(
+                'input[name="accountType"]:checked'
+            ).value;
 
-
-
-            const accountType =
-                document.querySelector(
-                    'input[name="accountType"]:checked'
-                ).value;
-
-
-
-
-
-
-
-
-            const response = await apiRequest("/auth/register", {
-
-
+            await apiRequest("/auth/register", {
 
                 method: "POST",
 
-
-
                 body: JSON.stringify({
 
-
-
-                    firstName:
-                        name.split(" ")[0],
-
-
-
-
-                    lastName:
-                        name
-                        .split(" ")
-                        .slice(1)
-                        .join(" "),
-
-
-
-
+                    firstName,
+                    lastName,
                     email,
-
-
-
                     phone,
-
-
-
                     password,
-
-
-
 
                     role:
                         accountType === "business"
                             ? "SELLER"
                             : "BUYER"
 
-
-
                 })
-
-
 
             });
 
-
-
-
-
-
-
-
-            alert(
-                "Account created successfully"
-            );
-
-
-
-            // switch back to login
-
-            registerTab.click();
-
-
-
+            alert("Registration successful! Please login.");
 
             registerForm.reset();
 
+            showLogin();
 
-
-
-
-        } catch(error) {
-
-
+        } catch (error) {
 
             alert(error.message);
 
-
-
         }
 
-
-
-
     });
-
-
-
 
 });

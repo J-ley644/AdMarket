@@ -55,10 +55,16 @@ const registerUser = async (userData) => {
 
 const loginUser = async (loginData) => {
 
+    console.log("================================");
+    console.log("LOGIN DATA:", loginData);
+
     const {
         email,
         password,
     } = loginData;
+
+    console.log("EMAIL:", email);
+    console.log("PASSWORD:", password);
 
     const normalizedEmail = email.toLowerCase().trim();
 
@@ -70,6 +76,8 @@ const loginUser = async (loginData) => {
 
     });
 
+    console.log("USER FOUND:", user ? "YES" : "NO");
+
     if (!user) {
 
         throw new Error("Invalid email or password.");
@@ -80,6 +88,8 @@ const loginUser = async (loginData) => {
         password,
         user.passwordHash
     );
+
+    console.log("PASSWORD MATCH:", passwordMatches);
 
     if (!passwordMatches) {
 
