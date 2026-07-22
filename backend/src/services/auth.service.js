@@ -55,16 +55,12 @@ const registerUser = async (userData) => {
 
 const loginUser = async (loginData) => {
 
-    console.log("================================");
-    console.log("LOGIN DATA:", loginData);
 
     const {
         email,
         password,
     } = loginData;
 
-    console.log("EMAIL:", email);
-    console.log("PASSWORD:", password);
 
     const normalizedEmail = email.toLowerCase().trim();
 
@@ -76,7 +72,6 @@ const loginUser = async (loginData) => {
 
     });
 
-    console.log("USER FOUND:", user ? "YES" : "NO");
 
     if (!user) {
 
@@ -89,7 +84,6 @@ const loginUser = async (loginData) => {
         user.passwordHash
     );
 
-    console.log("PASSWORD MATCH:", passwordMatches);
 
     if (!passwordMatches) {
 
