@@ -17,7 +17,7 @@
 
     <meta
         name="description"
-        content="Start selling on AdMarket.">
+        content="Create your business and start selling on AdMarket.">
 
     <link rel="stylesheet" href="../../assets/css/variables.css">
     <link rel="stylesheet" href="../../assets/css/reset.css">
@@ -61,255 +61,460 @@
 
 <main class="dashboard">
 
-<div class="container">
+    <div class="container">
 
-<section class="section-header">
+        <section class="section-header">
 
-<h1>
+            <span class="am-badge am-badge-success">
 
-Become a Seller
+                Seller Center
 
-</h1>
+            </span>
 
-<p>
+            <h1>
 
-Complete the information below to begin your seller application.
+                Open Your Store
 
-</p>
+            </h1>
 
-</section>
+            <p>
 
-<form id="seller-onboarding-form">
+                Welcome to AdMarket.
 
-<div class="form-group">
+                Complete the information below to create your online
+                business. Once your store has been created you'll be
+                able to upload products, manage orders, receive payments,
+                and grow your business from one dashboard.
 
-<label>
+            </p>
 
-Store Name
+        </section>
 
-</label>
+        <section class="card">
 
-<input
-class="form-control"
-type="text"
-placeholder="Enter your store name">
+            <div class="card-header">
 
-</div>
+                <h2>
 
-<div class="form-group">
+                    Business Information
 
-<label>
+                </h2>
 
-Store Description
+                <p>
 
-</label>
+                    Fields marked with * are required.
 
-<textarea
-class="form-control"
-rows="5"
-placeholder="Describe your store"></textarea>
-
-</div>
-
-<div class="form-group">
-
-<label>
-
-Business Category
-
-</label>
-
-<select class="form-control">
-
-<option>Electronics</option>
-
-<option>Fashion</option>
-
-<option>Beauty</option>
-
-<option>Home & Living</option>
-
-<option>Sports</option>
-
-<option>Books</option>
-
-<option>Automotive</option>
-
-<option>Health</option>
-
-<option>Other</option>
-
-</select>
-
-</div>
-
-<div class="form-group">
-
-<label>
-
-Country
-
-</label>
-
-<input
-class="form-control"
-type="text"
-placeholder="Country">
-
-</div>
-
-<div class="form-group">
-
-<label>
-
-County / State
-
-</label>
-
-<input
-class="form-control"
-type="text"
-placeholder="County or State">
-
-</div>
-
-<div class="form-group">
-
-<label>
-
-Town / City
-
-</label>
-
-<input
-class="form-control"
-type="text"
-placeholder="Town or City">
-
-</div>
-
-                <div class="form-group">
-
-                    <label for="business-address">
-
-                        Business Address
-
-                    </label>
-
-                    <textarea
-                        id="business-address"
-                        class="form-control"
-                        rows="3"
-                        placeholder="Enter your business or pickup address"></textarea>
-
-                </div>
-
-                <div class="form-group">
-
-                    <label for="business-phone">
-
-                        Business Phone Number
-
-                    </label>
-
-                    <input
-                        id="business-phone"
-                        class="form-control"
-                        type="tel"
-                        placeholder="07XXXXXXXX">
-
-                </div>
-
-                <div class="form-group">
-
-                    <label for="store-logo">
-
-                        Store Logo (Optional)
-
-                    </label>
-
-                    <input
-                        id="store-logo"
-                        class="form-control"
-                        type="file"
-                        accept="image/*">
-
-                    <small>
-
-                        Upload your store logo if you have one.
-
-                    </small>
-
-                </div>
-
-                <section class="section">
-
-                    <label class="checkbox">
-
-                        <input
-                            type="checkbox"
-                            id="seller-agreement">
-
-                        <span>
-
-                            I confirm that the information provided is accurate and I agree to follow AdMarket's Seller Policy and Community Guidelines.
-
-                        </span>
-
-                    </label>
-
-                </section>
-
-                <div class="dashboard-actions">
-
-                    <a
-                        href="../buyer/dashboard.html"
-                        class="btn btn-outline">
-
-                        Cancel
-
-                    </a>
-
-                    <button
-                        type="submit"
-                        class="btn btn-primary">
-
-                        Continue Verification
-
-                    </button>
-
-                </div>
-
-            </form>
-
-        </div>
-
-    </main>
-
-    <!-- Footer -->
-
-    <footer class="footer">
-
-        <div class="container">
-
-            <div class="footer-bottom">
-
-                © 2026 AdMarket. All Rights Reserved.
+                </p>
 
             </div>
 
+            <div class="card-body">
+
+                <form
+                    id="seller-onboarding-form"
+                    autocomplete="off">
+
+                    <!-- ========================= -->
+                    <!-- Store Information -->
+                    <!-- ========================= -->
+
+                    <div class="form-group">
+
+                        <label for="business-name">
+
+                            Store Name *
+
+                        </label>
+
+                        <input
+                            id="business-name"
+                            name="name"
+                            class="form-control"
+                            type="text"
+                            placeholder="Example: J.LEY Electronics"
+                            required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="business-description">
+
+                            Store Description
+
+                        </label>
+
+                        <textarea
+                            id="business-description"
+                            name="description"
+                            class="form-control"
+                            rows="5"
+                            placeholder="Tell customers about your business..."></textarea>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="business-category">
+
+                            Business Category
+
+                        </label>
+
+                        <select
+                            id="business-category"
+                            class="form-control">
+
+                            <option value="">
+
+                                Select Category
+
+                            </option>
+
+                            <option>
+
+                                Electronics
+
+                            </option>
+
+                            <option>
+
+                                Fashion
+
+                            </option>
+
+                            <option>
+
+                                Beauty
+
+                            </option>
+
+                            <option>
+
+                                Home & Living
+
+                            </option>
+
+                            <option>
+
+                                Sports
+
+                            </option>
+
+                            <option>
+
+                                Automotive
+
+                            </option>
+
+                            <option>
+
+                                Groceries
+
+                            </option>
+
+                            <option>
+
+                                Books
+
+                            </option>
+
+                            <option>
+
+                                Other
+
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <!-- ========================= -->
+                    <!-- Contact Information -->
+                    <!-- ========================= -->
+
+                    <div class="form-group">
+
+                        <label for="business-email">
+
+                            Business Email
+
+                        </label>
+
+                        <input
+                            id="business-email"
+                            name="email"
+                            class="form-control"
+                            type="email"
+                            placeholder="store@example.com">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="business-phone">
+
+                            Business Phone
+
+                        </label>
+
+                        <input
+                            id="business-phone"
+                            name="phone"
+                            class="form-control"
+                            type="tel"
+                            placeholder="07XXXXXXXX">
+
+                    </div>
+
+                                        <div class="form-group">
+
+                        <label for="business-website">
+
+                            Business Website
+
+                        </label>
+
+                        <input
+                            id="business-website"
+                            name="website"
+                            class="form-control"
+                            type="url"
+                            placeholder="https://yourstore.com">
+
+                    </div>
+
+                    <!-- ========================= -->
+                    <!-- Business Location -->
+                    <!-- ========================= -->
+
+                    <div class="form-group">
+
+                        <label for="business-country">
+
+                            Country
+
+                        </label>
+
+                        <input
+                            id="business-country"
+                            name="country"
+                            class="form-control"
+                            type="text"
+                            placeholder="Kenya">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="business-county">
+
+                            County / State
+
+                        </label>
+
+                        <input
+                            id="business-county"
+                            name="county"
+                            class="form-control"
+                            type="text"
+                            placeholder="Nairobi">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="business-city">
+
+                            Town / City
+
+                        </label>
+
+                        <input
+                            id="business-city"
+                            name="city"
+                            class="form-control"
+                            type="text"
+                            placeholder="Westlands">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="business-address">
+
+                            Business Address
+
+                        </label>
+
+                        <textarea
+                            id="business-address"
+                            name="address"
+                            class="form-control"
+                            rows="4"
+                            placeholder="Street, Building, Floor, Landmark..."></textarea>
+
+                    </div>
+
+                    <!-- ========================= -->
+                    <!-- Branding -->
+                    <!-- ========================= -->
+
+                    <div class="form-group">
+
+                        <label for="business-logo">
+
+                            Store Logo
+
+                        </label>
+
+                        <input
+                            id="business-logo"
+                            class="form-control"
+                            type="file"
+                            accept="image/png,image/jpeg,image/webp">
+
+                        <small>
+
+                            Optional. You can upload a logo now or later
+                            from your seller dashboard.
+
+                        </small>
+
+                    </div>
+
+                    <!-- ========================= -->
+                    <!-- Information -->
+                    <!-- ========================= -->
+
+                    <section class="section">
+
+                        <div class="alert alert-info">
+
+                            <strong>
+
+                                Before continuing
+
+                            </strong>
+
+                            <p>
+
+                                Your store will be created immediately.
+                                Verification documents can be uploaded
+                                later from your Seller Dashboard.
+
+                            </p>
+
+                        </div>
+
+                    </section>
+
+                    <!-- ========================= -->
+                    <!-- Agreement -->
+                    <!-- ========================= -->
+
+                    <section class="section">
+
+                        <label class="checkbox">
+
+                            <input
+                                id="seller-agreement"
+                                type="checkbox"
+                                required>
+
+                            <span>
+
+                                I confirm that the information above is
+                                correct and I agree to AdMarket's Seller
+                                Terms, Marketplace Policy and Community
+                                Guidelines.
+
+                            </span>
+
+                        </label>
+
+                    </section>
+
+                    <!-- ========================= -->
+                    <!-- Buttons -->
+                    <!-- ========================= -->
+
+                    <div class="dashboard-actions">
+
+                        <a
+                            href="../../index.html"
+                            class="btn btn-outline">
+
+                            Cancel
+
+                        </a>
+
+                        <button
+                            id="submit-business"
+                            class="btn btn-primary"
+                            type="submit">
+
+                            Create Store
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+            </div>
+
+</main>
+
+<!-- ========================================== -->
+<!-- Footer -->
+<!-- ========================================== -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-bottom">
+
+            © 2026 AdMarket. All Rights Reserved.
+
         </div>
 
-    </footer>
+    </div>
 
-    <script src="../../assets/js/core/config.js"></script>
+</footer>
+
+<!-- ========================================== -->
+<!-- Core Scripts -->
+<!-- ========================================== -->
+
+<script src="../../assets/js/core/config.js"></script>
+
+<script src="../../assets/js/core/api.js"></script>
+
 <script src="../../assets/js/core/ui.js"></script>
+
 <script src="../../assets/js/core/modal.js"></script>
+
 <script src="../../assets/js/core/loader.js"></script>
+
 <script src="../../assets/js/core/toast.js"></script>
+
 <script src="../../assets/js/core/validator.js"></script>
+
 <script src="../../assets/js/core/theme.js"></script>
+
 <script src="../../assets/js/core/app.js"></script>
+
+<!-- ========================================== -->
+<!-- Seller Onboarding -->
+<!-- ========================================== -->
+
+<script src="../../assets/js/seller/onboarding.js"></script>
 
 </body>
 
