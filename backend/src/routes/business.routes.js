@@ -36,7 +36,6 @@ router.get("/:id", getOne);
 router.post(
     "/",
     protect,
-    authorize("SELLER", "ADMIN"),
     createBusinessValidator,
     validate,
     create
